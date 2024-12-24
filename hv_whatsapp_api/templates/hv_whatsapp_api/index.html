@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+{% comment %} <meta name="description" content="Save ₹200"> 
+<meta property="og:title" content="Click to Pay ₹799 only.           Save ₹200"/>
+<meta property="og:url" content="https://f64c15f13677.ngrok.io/payment/invoice/sasas"/>
+<meta property="og:image" content="https://f64c15f13677.ngrok.io/static/hv7.png">{% endcomment %}
+</head>
+<body>
+<br/>
+<br/>
+<h1>Please make your payment here. Your url_id is {{url_id}}</h1>
+{% comment %} <img src="{% static "hv_whatspp_api/images/logo.PNG" %}" alt="My image"> {% endcomment %}
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="hidden" name="payment_status" value="{{ url_id }}">
+    <input type="submit" name="button1">
+</form>
+</body>
+</html>

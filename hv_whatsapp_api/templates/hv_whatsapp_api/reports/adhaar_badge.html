@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+   	<title>Report</title>
+	<style type="text/css"></style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div style = "background-color: #333333;text-align:center;width: 1000px;border: 4px solid #000000;border-radius: 1%; margin-top: 20px;">
+		{% if jsn.adhaar.is_check_passed == False %}
+			<img src="{% static "img/adhaar_red.png" %}" style = "margin-top: 20px; width: 950px; border-radius: 10px 10px 0px 0px;">
+		{% else %}
+			<img src="{% static "img/adhaar_green.png" %}" style = "margin-top: 20px; width: 950px; border-radius: 10px 10px 0px 0px;">
+		{% endif %}
+		<div>               
+            <table width="950px" cellpadding="0" cellspacing="0" style="border: 3px solid #ccc; margin-bottom: 25px;border-top:4px solid #fd6455;text-align:left;margin-left: 25px;">
+                <tbody>
+                    <tr style="background:#f8f8f8;">
+                        <td rowspan="4" style="background:#f8f8f8;text-align:center;" class="text-center"><br><img src="{{ jsn.adhaar.selfie_url }}" style="border:1px solid black; width:140px; height:180px;margin-bottom: 22px;"></td>
+                        <td style="padding: 20px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:0px solid #ccc;white-space:nowrap;">
+                            AADHAAR NUMBER</td>
+                        <td class="borRight" style="padding: 20px 0px; font-size: 15px; position: relative;">
+                            {{jsn.adhaar.adhaar_number}}
+                            {% if jsn.adhaar.number_valid == "Green" %}
+                            <img src="{% static "img/open.png" %}" style="verticle-align:top;">
+                            {% else %}
+                            <img src="{% static "img/close.png" %}" style="verticle-align:top;">
+                            {%endif%}
+                            
+                        </td>
+                        <td style="padding: 20px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:0px solid #ccc;">
+                            DOB</td>
+                        <td style="padding: 20px 10px; font-size: 15px; position: relative;border-bottom:0px solid #ccc;">
+                            {{jsn.adhaar.dob}}
+                            {% if jsn.adhaar.dob_valid == "Green" %}
+                            <img src="{% static "img/open.png" %}" style="verticle-align:top;">
+                            {%endif%}
+                        </td>
+                    </tr>
+                    <tr style="background:#ffffff;">
+                        <td style="padding: 20px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:0px solid #ccc;">
+                            NAME</td>
+                        <td style="padding: 20px 0px; font-size: 15px; position: relative;border-bottom:0px solid #ccc;">
+                            {{jsn.adhaar.applicant_name}}</td>
+                        <td style="padding: 20px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:0px solid #ccc;">
+                            AGE</td>
+                        <td style="padding: 20px 10px; font-size: 15px; position: relative;border-bottom:0px solid #ccc;">
+                            {{jsn.adhaar.age_data}}
+                            {% if jsn.adhaar.age_valid == "Green" %}
+                            <img src="{% static "img/open.png" %}" style="verticle-align:top;">
+                            {% else %}
+                            <img src="{% static "img/close.png" %}" style="verticle-align:top;">
+                            {%endif%}
+                            
+                        </td>
+                    </tr>
+                    <tr style="background:#f8f8f8;">
+                        <td style="padding: 20px 10px; font-size: 15px; font-weight: bold; position: relative;white-space:nowrap;">
+                            FATHER'S NAME</td>
+                        <td style="padding: 20px 0px; font-size: 15px; position: relative;border-bottom:0px solid #ccc;">
+                            {{jsn.adhaar.father_name}}</td>
+                        <td style="padding: 20px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:0px solid #ccc;">
+                            GENDER</td>
+                        <td style="padding: 20px 10px; font-size: 15px; position: relative;border-bottom:0px solid #ccc;">
+                            {{jsn.adhaar.gender_data}}
+                            {% if jsn.adhaar.gender_valid == "Green" %}
+                            <img src="{% static "img/open.png" %}" style="verticle-align:top;">
+                            {% else %}
+                            <img src="{% static "img/close.png" %}" style="verticle-align:top;">
+                            {%endif%}
+                            
+                        </td>
+                    </tr>
+                    <tr style="background:#ffffff;">
+                        <td style="padding: 10px 12px; font-size: 15px; font-weight: bold; position: relative;border-bottom:0px solid #ccc;">
+                            STATE</td>
+                        <td colspan="3" style="padding: 20px 0px; font-size: 15px; position: relative;border-bottom:0px solid #ccc;">
+                            {{jsn.adhaar.state_data}}
+                            {% if jsn.adhaar.state_valid == "Green" %}
+                            <img src="{% static "img/open.png" %}" style="verticle-align:top;">
+                            {% else %}
+                            <img src="{% static "img/close.png" %}" style="verticle-align:top;">
+                            {%endif%}
+                        </td>
+                    </tr>
+                    <tr style="background:#f8f8f8;text-align:left;">
+						<td style="padding: 10px 12px; font-size: 15px; font-weight: normal; position: relative;border-bottom:1px solid #ccc;border-top:1px solid #ccc;color:#828282;height:57px" colspan="2" class="greyTxt"><br>
+                            <b>REMARKS-</b> The above details have been verified on {{jsn.adhaar.verification_date}}. <br>                            
+                            <b>LEGAL T & C- </b><a href="https://hellov.in/read.pdf">https://hellov.in/read.pdf</a>
+                        </td>
+                        <td style="padding: 10px 12px; font-size: 15px; font-weight: normal; position: relative;border-bottom:1px solid #ccc;border-top:1px solid #ccc;color:#828282;height:57px" colspan="3" class="greyTxt"><br>
+                            <span><b>BADGE No.: </b>{{jsn.adhaar.badge_id}}</span> <br>
+                            <span><b>VALIDITY URL: </b><a href="{{ jsn.adhaar.badge_url }}">{{ jsn.adhaar.badge_url }}</a></span> <br>
+                        </td>
+					</tr>
+                    </tbody>
+            </table>
+		</div>
+		<img src="{% static "img/footer.png" %}" style = "width: 950px; margin-bottom: 20px;">
+	</div>
+</body>
+</html>

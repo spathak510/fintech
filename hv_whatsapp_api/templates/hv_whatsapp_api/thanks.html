@@ -1,0 +1,458 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/report.css' %}" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+        h6 {
+            font-size: 1.5rem !important;
+            font-family: Helvetica;
+        }
+
+        h6.under,
+        h6.under1,
+        h6.under2 {
+            width: 100%;
+
+            border-bottom: 2px solid #c3c3c3;
+            line-height: 0.1em;
+            margin: 10px 0 20px;
+
+        }
+
+        h6.under span,
+        h6.under1 span,
+        h6.under2 span {
+            background: #fff;
+            padding: 0 10px;
+
+        }
+
+        h6.under1 {
+            text-align: center;
+        }
+
+        h6.under2 {
+            text-align: right;
+        }
+
+        h6.under2 span {
+            margin-right: 40px;
+        }
+
+        td {
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body class="report-body" style="padding:0px">
+    <div class="container-fluid">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <div style="height: 120px;padding-top:10px;padding-bottom:10px">
+                        <img style="height: 100px;" src="{% static 'img/hv-red.png' %}" alt="" />
+                    </div>
+                </td>
+                <td colspan="2" style="font-family:ROBOTO">
+                    <div style="background-color: #eee;float:right;min-width:225px;padding:8px">
+                        <div>
+                            <span style="color: #6D6D6D;">CANDIDATE NAME</span> : <span>{{ candidate_name }}</span>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <span style="color: #6D6D6D;">ADDRESS</span> : <span>{{ address }}</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr style="border-width: 0px;">
+                <td colspan="4">
+                    <div class="row" style="margin-top: 30px;margin-bottom:0px">
+
+                        <h6 class="under" style="font-weight:bold;font-family:Helvetica"><span
+                                style="margin-left: 20px;">INDIVIDUAL ADDRESS PROFILING</span></h6>
+                    </div>
+
+                </td>
+            </tr>
+            <tr style="border-width: 0px;">
+                <td colspan="1" style="border-radius:8px 0px 0px 8px;margin-bottom:10px;background: #4d4d4d;color:white;padding:8px">
+                    <div class="center-align" >
+                            ADDRESS DETAILS
+                        </div>
+                </td>
+                <td colspan="3">
+                   
+                        <div class="center-align" style="border:solid 1px #a1a1a1;border-left-width:0px;font-size:1.2em;color:white;padding:4px;font-family:Arial Narrow;border-radius:0px 8px 8px 0px" >
+                            <div style="background: #8987A7; color:white;padding:8px;border-radius:0px 8px 8px 0px">
+                                {{ address }}</div>
+                        </div>
+                   
+                </td>
+            </tr>
+            <tr style="border-width: 0px;">
+
+                <td colspan="1" style="padding-top: 20px;width:33%">
+                    <table>
+                        <tr style="border-width: 0px;">
+                            <td>
+                                <div
+                            style="padding: 11px; background:#0EA900;color:white;border-radius:8px 0px 0px 8px;min-width:75px;text-align:center;font-size:.97em">
+                            Clear</div>
+                            </td>
+                            <td>
+                                <div style="float:left;padding:12.5px;font-family:ROBOTO;font-size:.785em;padding-left:5px;padding-right:5px;border:solid 1px #a1a1a1;;width:100%;border-left-width:0px;border-right-width:0px;">
+                                    Details provided by the candidate are  accurate.
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    </td>
+                    <td style="padding-top: 20px;width:33%">
+                        <table>
+                            <tr style="border-width: 0px;">
+                                <td>
+                                    <div
+                                style="padding: 11px; background:#FFA500;color:white;min-width:75px;text-align:center;font-size:.97em">
+                                Consider</div>
+                                </td>
+                                <td>
+                                    <div style="padding:12.5px;font-family:ROBOTO;font-size:.785em;padding-left:5px;padding-right:5px;border:solid 1px #a1a1a1;;width:100%;border-left-width:0px;border-right-width:0px;">
+                                        Details provided by the candidate require attention.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="padding-top: 20px;width:34%">
+                    <table>
+                        <tr style="border-width: 0px;">
+                            <td>
+                                <div
+                                style="padding: 11px; background:#F44336;color:white;min-width:75px;text-align:center;;padding-left:6px;font-size:.97em">
+                                Discrepancy</div>
+                            </td>
+                            <td>
+
+                        <div style="padding:12.5px;font-family:ROBOTO;font-size:.785em;padding-right:5px;padding-left:5px;border:solid 1px #a1a1a1;width:100%;border-left-width:0px;border-radius:0px 8px 8px 0px">
+                            Details provided by the candidate do not match.
+                        </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                   
+                    
+                </td>
+              
+
+
+
+              
+            </tr>
+            <tr style="border-width: 0px;">
+                <td colspan="1" style="padding-right:8px;text-align:center;font-size: 0.9em;width:34%">
+                    <div class="row" style="margin:0px;margin-top:10px;">
+                        <div class="col s12" style="padding:0px">
+                            <h6 class="under1" style="font-weight:bold;font-family:Helvetica;text-align:left"><span
+                                    style="margin-left: 20px;;">PRIMARY ANALYSIS</span>
+                            </h6>
+
+                        </div>
+                    </div>
+                    <table
+                        style="border:solid 2px #a1a1a1;border-top-width:8px;padding:0px;margin:0px;font-family:Roboto">
+                        <tbody>
+                            <tr style="border-width: 0px;">
+                                <td style="text-align:center;">
+                                    <div
+                                        style="padding: 5px;border-bottom:solid 3px #a1a1a1;background:#f9f9f9;min-height:45px;">
+                                        <div style="font-weight: bold;color:#4D4D4D;">
+                                            PROOF OF DOCUMENT
+                                        </div>
+                                        <div style="color:#4D4D4D;;font-weight: bold;">
+                                            {{ proof_doc_type }}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="border-width: 0px;">
+                                <td style="text-align:center;">
+                                    <div
+                                        style="padding: 5px;border-bottom:solid 3px #a1a1a1;background:#f9f9f9;min-height:45px;">
+                                        <div style="font-weight: bold;color:#4D4D4D;">
+                                            LOCATION
+                                        </div>
+                                        <div style="color:#4D4D4D;;font-weight: bold;">
+                                            LATITUDE & SIGNATURE
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="border-width: 0px;">
+                                <td style="text-align:center;">
+                                    <div
+                                        style="padding: 5px;border-bottom:solid 3px #a1a1a1;background:#f9f9f9;min-height:45px;">
+                                        <div style="font-weight: bold;color:#4D4D4D;">
+                                            ARTEFACTS
+                                        </div>
+                                        <div style="color:#4D4D4D;;font-weight: bold;">
+                                            SELFIE & SIGNATURE
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="border-width: 0px;">
+                                <td style="text-align:center;">
+                                    <div style="padding: 5px; background:#f9f9f9;min-height:45px;">
+                                        <div style="font-weight: bold;color:#4D4D4D;">
+                                            FINAL RESULTS
+                                        </div>
+                                        <div style="color:{{ color }};font-weight: bold;">
+                                            {{ result}}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </td>
+                <td colspan="3" style="padding-left: 8px;;font-family:Helvetica;width:66%">
+
+                    <div class="row" style="margin:0px;margin-top:10px;">
+
+                        <div class="col s12" style="padding:0px">
+                            <h6 class="under1" style="font-weight:bold;"><span>ADDRESS CHECK :
+                                    DIGITAL</span></h6>
+                        </div>
+
+                    </div>
+                    <table  style="border:solid 2px #a1a1a1;border-top-width:8px;padding:0px;margin:0px;font-family:Roboto">
+                        <tbody>
+                            <tr style="border-bottom-width:0px ;">
+                                <td style="border-right:solid 1px #ccc;">
+                                    <div style="padding: 5px;min-height:45px;">
+                                        <div style="font-weight:bold">
+                                            Ownership Status
+                                        </div>
+                                        <div style="font-size:.75em">
+                                            (Owned / Rented / Hostel / Other)
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="padding: 5px;min-height:45px;">
+                                        <div style="font-weight:bold;">
+                                            {{ ownership_status }}
+                                        </div>
+        
+        
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="border-bottom-width:0px ;">
+                                <td style="border-right:solid 1px #ccc;">
+                                    <div style="padding: 5px;background:#eee;min-height:45px;">
+                                        <div style="font-weight:bold">
+                                            Type of Address
+                                        </div>
+                                        <div style="font-size:.75em">
+                                            (Current / Permament / Previous)
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="padding: 5px;background:#eee;min-height:45px;">
+                                        <div style="font-weight:bold;">
+                                            {{ type_of_address }}
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                            <tr style="border-bottom-width:0px ;">
+                                <td style="border-right:solid 1px #ccc;">
+                                    <div style="padding: 5px;min-height:44px;padding-top:10px">
+                                        <div style="font-weight:bold;">
+                                            Period of Stay
+                                        </div>
+        
+        
+                                    </div>
+        
+                                </td>
+                                <td>
+                                    <div style="font-weight:bold;min-height:44px;padding-top:10px">
+                                        <div style="overflow:hidden;">
+                                            <div style="width:50%;float:left;text-align:center;padding:5px">
+                                                From : {{ period_of_stay_from }}
+                                            </div>
+    
+                                            <div
+                                                style="width:50%;float:left;;text-align:center;border-left:solid 2px #eee;padding:5px">
+                                                To : {{ period_of_stay_to }}
+                                            </div>
+                                        </div>
+    
+    
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="border-bottom-width:0px ;">
+                                <td style="border-right:solid 1px #ccc;">
+                                    <div style="padding: 5px;background:#eee;min-height:45px;;padding-top:15px">
+                                        <div style="font-weight:bold;">
+                                            Proof of document submitted
+                                        </div>
+        
+                                    </div>
+                                </td>
+                                <td>
+
+                                    <div style="padding: 5px;background:#eee;min-height:45px;;padding-top:15px">
+                                        <div style="font-weight:bold;">
+                                            {{ proof_doc_type }}
+                                        </div>
+        
+        
+        
+                                    </div>
+                                   
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                   
+
+                </td>
+
+            </tr>
+            <tr style="border-width: 0px;">
+                <td colspan="3">
+
+                    <div class="row" style=" margin:0px;margin-top: 30px;margin-bottom:0px">
+
+                        <h6 class="under"
+                            style="margin: 0px;;font-weight:bold;border-bottom: 2px solid #c3c3c3;font-weight:bold">
+                            <span style="margin-left: 20px;">SELFIE & SIGNATURE </span></h6>
+                    </div>
+                    <div class="row" style="border:solid 2px #a1a1a1;margin:0px;padding:8px;padding-top:16px;border-top-width:0px">
+                        <div class="col s4 center-align">
+                            <div style="font-weight:bold;">
+                                Selfie
+                                <div style="margin-top: 16px;">
+                                    <img style="width: 225px;height:225px" src={{selfie}} >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 center-align">
+                            <div style="font-weight:bold;">
+                                Signature
+                                <div style="margin-top: 16px;">
+                                    <img style="width: 225px;height:225px"
+                                        src="{{signaturedoc }}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 center-align">
+                            <div style="font-weight:bold;">
+                                Gate
+                                <div style="margin-top: 16px;">
+                                    <img style="width: 225px;height:225px"  src="{{ gatedoc }}" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+            <tr style="border-width: 0px;">
+                <td colspan="2" style="padding-right: 8px;width:62%">
+                    <div class="row" style=" margin:0px;margin-top: 30px;margin-bottom:0px">
+
+                        <h6 class="under"
+                            style="margin: 0px;;font-weight:bold;border-bottom: 2px solid #c3c3c3;font-weight:bold">
+                            <span style="margin-left: 20px;">CANDIDATE SUBMITTED DOCUMENT (ID/Address)</span></h6>
+                    </div>
+                    <div class="row" style="border:solid 2px #a1a1a1;margin:0px;padding:8px;padding-top:16px;border-top-width:0px;">
+                        <div class="col s6 center-align">
+                            <div style="font-weight:bold;">
+                                Front
+                                <div style="margin-top: 16px;">
+                                    <img style="width: 225px;height:225px"
+                                    src="{{ proofdocfront }}" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 center-align">
+                            <div style="font-weight:bold;">
+                                Back
+                                <div style="margin-top: 16px;">
+                                    <img style="width: 225px;height:225px"
+                                    src="{{ proofdocback }}"  >
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row"
+                            style=" margin:0px;margin-top: 30px;margin-bottom:0px;text-align:center;font-size:.8em">
+                            
+                            <br>
+                            <span style="visibility: hidden;">asas</span>
+                        </div>
+
+                    </div>
+                </td>
+                <td style="padding-left: 8px;width:38%" colspan="1">
+                    <div class="row" style=" margin:0px;margin-top: 30px;margin-bottom:0px">
+
+                        <h6 class="under"
+                            style="margin: 0px;;font-weight:bold;border-bottom: 2px solid #c3c3c3;font-weight:bold">
+                            <span style="margin-left: 100px;">LOCATION </span></h6>
+                    </div>
+                    <div class="row" style="border:solid 2px #a1a1a1;margin:0px;padding:8px;padding-top:16px;border-top-width:0px">
+
+                        <div class="col s12 center-align">
+                            <div style="padding-top:5px;font-weight:bold;">
+                                Latitude and Longitude
+                                <div style="margin-top: 8px;">
+                                    <img style="width:270px;height:225px"
+                                    src="{{ capturedMAPImagedoc }}" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"
+                            style="font-weight:bold; margin:0px;margin-top: 30px;margin-bottom:0px;text-align:center;color:{{color}}">
+                           <span style="color: black;font-size:.9em;">Individual conducted verification at this site</span>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i>
+                           </span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+        </table>
+
+<div style="font-size: .8em;margin-top:10px">
+    Disclaimer:<br>
+    1. Address match will be done basis document address or latitude/longitude match.<br>
+    2. Latitude/Longitude may not be accurately captured or display approximate location due to network / GPS issues.<br>
+    3. Photographs appearing as blank/black may not have been captured or provided by the applicant.<br>
+</div>
+    </div>
+</body>
+
+</html>

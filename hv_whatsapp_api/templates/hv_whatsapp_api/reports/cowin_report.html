@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Covid Vaccine Verification</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        /* font-family:Times, serif; */
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: auto;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    .center-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 92%;
+        height: 1207px;
+        border-width: 2px;
+        border-style: solid;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="">
+            <section class="one">
+                <div class="d-flex justify-content-between border-bottom border-dark">
+                    <div class="d-flex h4 my-5 mx-2" style="text-align:left">Vaccine Verification</div>
+                    <!-- <div class="d-flex my-3 my-5 h4 mx-2" style="text-align:right">
+                        Bridger Insight XG
+                    </div> -->
+                </div>
+            </section>
+            <section class="two py-4">
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex">
+                        <div class="h5" style="text-align:center">
+                            The information is given with regards to the search for
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="d-flex justify-content-center" style="text-align:center">
+                    <div class="d-flex">
+                        <small class="">
+                            The information is given with regards to the search for
+                        </small>
+                    </div>
+                </div> -->
+            </section>
+            <section class="border-top">
+                <style>
+                    .border-top {
+                        border-top: 7px solid #ff0000 !important;
+                    }
+                </style>
+                <table class="table table-striped border text-left">
+                    <tbody>
+                        <style>
+                            th,
+                            td {
+                                width: 50%;
+                            }
+
+                            .thin {
+                                font-weight: normal !important;
+                            }
+                        </style>
+                        <tr>
+                            <th scope="row" class="border thin"><i class=" mx-1 fa fa-search"
+                                    style="font-size:15px;color:red; font-weight: bolder !important;"></i>Case ID</th>
+                            <td>{{jsn.user.search_id}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="border thin"><i class=" mx-1 fa fa-user"
+                                    style="font-size:15px;color:red; font-weight: bolder !important;"></i>Client Name</th>
+                            <td>{{jsn.user.client}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="border thin"><i class=" mx-1 fa fa-user"
+                                    style="font-size:15px;color:red; font-weight: bolder !important;"></i>Name</th>
+                            <td>{{jsn.user.name}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="border thin"><i class="mx-1 fa fa-phone"
+                                    style="font-size:15px;color:red; font-weight: bolder !important;"></i>Mobile Number
+                            </th>
+                            <td>{{jsn.user.mobile_no}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="border thin"><i class=" mx-1 fa fa-envelope"
+                                    style="font-size:15px;color:red; font-weight: bolder !important;"></i>Email ID</th>
+                            <td>{{jsn.user.email_id}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="border thin"><i class=" mx-1 fa fa-calendar"
+                                    style="font-size:15px;color:red; font-weight: bolder !important;"></i>Report Date
+                            </th>
+                            <td> {{jsn.user.report_date}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="border-top">
+                <table class="table table-bordered">
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr class=" text-center" style="text-align:center">
+                            <td colspan="12">SOURCES
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>CoWIN</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="two py-4">
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex">
+                        <div class="h6" style="text-align:center">
+                            SEARCH RESULT
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex" style="text-align:center">
+                        <small class="">
+                            We conducted a search on behalf of the candidate in the source records and found the following
+                        </small>
+                    </div>
+                </div>
+            </section>
+            <!-- 3table -->
+            <section class="border-top">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr class="text-left">
+                            <td colspan="6">Beneficiary Reference ID </td>
+                            <td style="text-align: initial;" colspan="6">{{jsn.cowin.beneficiary_id}}</td>
+                        </tr>
+                        <tr class="text-left">
+                            <td colspan="6">Vaccination Status
+                            </td>
+                            <td colspan="6">
+                                <div class="" style="
+                                display:inline-flexbox;">
+                                    {% if jsn.cowin.vaccination_status == "Partially Vaccinated" %}
+                                    <span class="">Dose One <i class=" mx-3 bi bi-check-circle text-success"
+                                            style="font-size: large;"></i></span>
+                                    <span class="">Dose Two <i class=" mx-3 bi bi-x-circle text-danger"
+                                            style="font-size: large;"></i></span>
+                                    {% elif jsn.cowin.vaccination_status == "Vaccinated" %}
+                                    <span class="">Dose One <i class=" mx-3 bi bi-check-circle text-success"
+                                            style="font-size: large;"></i></span>
+                                    <span class="">Dose Two <i class=" mx-3 bi bi-check-circle text-success"
+                                            style="font-size: large;"></i></span>
+                                    {% else %}
+                                    <span class="">Dose One <i class=" mx-3 bi bi-x-circle text-danger"
+                                            style="font-size: large;"></i></span>
+                                    <span class="">Dose Two <i class=" mx-3 bi bi-x-circle text-danger"
+                                            style="font-size: large;"></i></span>
+                                    {% endif %}
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="text-left">
+                            <td colspan="6">Vaccine Name</td>
+                            <td style="text-align: initial;" colspan="6">{{jsn.cowin.vaccine_name}}</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td colspan="6" class="">
+                                <div class="text-center h5 m-2">
+                                    Dose One
+                                </div>
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Date</td>
+                                            <td>{{jsn.cowin.dose1_date}}</td>
+                                        </tr>
+                                        <tr style="height: 75px;">
+                                        <!-- <tr> -->
+                                            <td>Vaccination center</td>
+                                            <td>{{jsn.cowin.dose1_vaccinated_at}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Center ID</td>
+                                            <td>{{jsn.cowin.dose1_center_id}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td colspan="6" class="">
+                                <div class="text-center h5 m-2">
+                                    Dose Two
+                                </div>
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Date</td>
+                                            <td>{{jsn.cowin.dose2_date}}</td>
+                                        </tr>
+                                        <tr style="height: 75px;">
+                                        <!-- <tr> -->
+                                            <td>Vaccination center</td>
+                                            <td>{{jsn.cowin.dose2_vaccinated_at}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Center ID</td>
+                                            <td>{{jsn.cowin.dose2_center_id}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="text-left bg-white">
+                            <td colspan="12" class="">
+                                {% if jsn.cowin.vaccination_status == "Partially Vaccinated" %}
+                                <section class="my-3 mx-1" style="  font-size: 0.8rem;
+      ">
+                                    <span class="h6">*Remarks: </span> <span>Vaccination status - Partially Vaccinated</span>
+                                </section>
+                                {% elif jsn.cowin.vaccination_status == "Vaccinated" %}
+                                <section class="my-3 mx-1" style="  font-size: 0.8rem;
+                                ">
+                                    <span class="h6">*Remarks: </span> <span>Vaccination status - Fully Vaccinated</span>
+                                </section>
+                                {% else %}
+                                <section class="my-3 mx-1" style="  font-size: 0.8rem;
+                                                          ">
+                                    <span class="h6">*Remarks: </span> <span>Vaccination status - Not Vaccinated/Input data is incorrect</span>
+                                </section>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <h5 style="page-break-before: always;">* Disclaimers</h5>
+            <section class="my-1 mx-4" style="font-size: 0.8rem;">
+                1. The information in the report are provided on an 'as is', 'as available' basis from respective data sources, on the date of generating this report.<br/>
+                2. We have collected the information from publicly available records/data sources, subject to consent of the candidate. We try to the maximum possible extent to reduce errors. However, Hello Verify expressly disclaims liability for errors or omissions in this report, or other irregularities, if any, in information obtained from respective data sources.<br/>
+                3. No warranty of any kind, implied or express or statutory, including but not limited to the warranties of fitness of candidate for a particular purpose, is given in conjunction with the information in the report.
+            </section>
+        </div>
+    </div>
+    <!-- END -->
+    <!-- END -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

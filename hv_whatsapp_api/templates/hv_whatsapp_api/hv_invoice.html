@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <meta property="og:image" itemprop="image" content="{% static 'logo.PNG' %}">
+  <img src="{% static "logo.PNG" %}" alt="My image">
+  <table style="width:70%">
+    <tr>
+      <th colspan="5">INVOICE</th>
+    </tr>
+    <tr>
+      <th style="text-align:left; font-size: 12px; font-weight: bold;" colspan="2">To: <br/> {{client_address}}<br /><br />
+        Client GSTIN: {{gstin}}
+      </th>
+      <th style="text-align:left; font-size: 12px; font-weight: bold;" colspan="3">Date : {{date}}<br /><br />
+        GST No. : {{gst_no}}<br /><br />
+        PAN No. : {{pan_no}}<br /><br />
+        SAC : {{sac}}<br /></th>
+    </tr>
+    <tr>
+      <th colspan="5" style="text-align:center; font-size: 12px; font-weight: bold; background-color: #ADADAD;">Performa Invoice</th>
+    </tr>
+    <tr>
+      <td rowspan="5" style="text-align:left; font-size: 14px; font-weight: bold;">Description:<br /><br />
+        HelloVerify Services Rendered<br /><br /> </td>
+      <td style="text-align:center; font-size: 14px; font-weight: bold;">Particulars</td>
+      <td style="text-align:center; font-size: 14px; font-weight: bold;">No. of cases</td>
+      <td style="text-align:center; font-size: 14px; font-weight: bold;">Amount (in &#8377)</td>
+    </tr>
+    <tr>
+      <td>{{package_name}}<br /><br /><br /><br /></td>
+      <td>{{number_of_case}}<br /><br /><br /><br /></td>
+      <td>{{amount}}<br /><br /><br /><br /></td>
+    </tr>
+    <tr>
+      <td colspan="2">Total Amount</td>
+      <td>{{total_amount}}</td>
+    </tr>
+    <tr>
+      <td colspan="2">Discount</td>
+      <td>{{discount}}</td>
+    </tr>
+    <tr>
+      <td colspan="2">Net Amount (including 18% GST)</td>
+      <td>{{net_amount}}</td>
+    </tr>
+    </tr>
+    </tr>
+    <tr>
+      <td colspan="5" style="font-size: 14px; font-weight: bold;">FOR HELLO VERIFY INDIA PRIVATE LIMITED.<BR /><BR /><BR /><BR /><BR /><BR />Authorised Signatory</td>
+    </tr>
+    </tr>
+    <tr>
+      <td style="text-align:center; font-size: 14px; font-weight: bold;" colspan="5">HELLOVERIFY INDIA PRIVATE LIMITED<BR /> Corporate Office: B-44, 1st and 3rd Floor, Sector 57, Noida,
+        Uttar Pradesh-201301, India</td>
+    </tr>
+
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,774 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://711de4f227ba.ngrok.io/report/report/123 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <title>Report</title>
+   <style type="text/css"></style>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+   <div style="border-top:10px solid #000;border-bottom:1px solid #ccc;width:1120px;margin:0px auto 30px;padding:0; margin-bottom:40px;">
+      <div class="container">
+         <div class="row">
+            <div style="float:left;width:30%;border-right:0px solid #ccc;padding:0; margin-top:1px;"> <img src="{% static "img/logo.png" %}" class="img-responsive"></div>
+            <div style="float:right;width:69%;padding:0px 0;border-left:1px solid #ccc;background:#f8f8f8;">
+               <ul style="padding:0;margin:0;list-style:none;float:left;width:45%;padding:10px 0;">
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Client Name: <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">{{jsn.header.client_name}}</span>
+                  </li>
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Mobile Number : <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">{{jsn.header.client_mob}}</span>
+                  </li>
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Report Date: <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">{{jsn.header.report_date}}</span>
+                  </li>
+               </ul>
+               <ul style="padding:0;margin:0;list-style:none;float:left;width:45%;border-left:1px solid #ccc;padding:10px 0;">
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Applicant Name: <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">{{jsn.header.applicant_name}}</span>
+                  </li>
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Applicant Mobile Number : <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">{{jsn.header.applicant_phone}}</span>
+                  </li>
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Applicant Address: <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-align: justify;text-justify: inter-word;">{{jsn.header.appicant_address}}</span>
+                  </li>
+               </ul>
+            </div>
+            <div style="clear:both;"></div>
+         </div>
+      </div>
+   </div>
+   <section>
+      <article>
+         <div class="container annexture" style="border-top:2px solid #ccc;position:relative;margin:50px auto;padding:40px 0;width:1120px;margin:0 auto;">
+            <div class="topAnnex" style="position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:28px;font-weight:700;top:-21px;left:15px;">
+               BACKGROUND SCREENING REPORT</div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="verifyEmp">
+                     <ul style="margin:0;padding:0 0px;list-style:none;">
+                        <li style="float: left; background: #4D4E4E; border: 2px solid #A8A8A8; border-right:0px; border-radius: 12px 0px 0px 12px; color: #fff; padding: 10px; width: 30%;font-weight:bold;text-align:center;">
+                           <b>{{jsn.final.verify}}</b></li>
+                        <li class="second" style="background: #fff; width: 67%; border-radius: 0px 12px 12px 0px; float: right; padding: 2px 2px; border: 2px solid #A8A8A8;border-left:0px;color:#fff;font-weight:bold;text-align:center;position:relative;left:-6px;">
+                           <div style="background:#878EA7;width:100%;line-height:35px;border-radius:0 10px 10px 0"><b>{{jsn.final.package_name}}</b></div></li><b>
+                     </b></ul><b>
+                  </b></div><b>
+               </b></div><b>
+               <div style="clear:both;"></div>
+            </b></div><b>
+            <div class="clearfix"></div>
+            <div class="row">
+               <div class="col-md-4" style="width:34.4%;float:left;">
+                  <ul class="clear" style="list-style:none;padding:10px 0 10px 0px;margin:0;">
+                     <li class="green" style="background: #0EA900; color: #fff; text-transform: uppercase; width: 26%; text-align: center; font-size: 18px; padding: 20px 0px;float:left;font-weight:normal;border-radius: 12px 0 0 12px;border: 1px solid #A8A8A8;">
+                        CLEAR</li>
+                     <li style="padding: 16px 5px;float: left;width: 70%;font-size: 15px; color:grey;line-height: 100%;margin: 0px 0;border: 1px solid #A8A8A8;border-left: 0px; font-weight:normal">Details provided by the candidate are accurate</li>
+                  </ul>
+                  <div class="clearfix"></div>
+               </div>
+			   <div class="col-md-4" style="width:33%;float:left;margin-left:-3px;">
+                  <ul class="clear" style="list-style:none;padding:10px 0 10px 0;margin:0;">
+                     <li class="green" style="background: #FAA41A; color: #fff; text-transform: uppercase; width: 26%; text-align: center; font-size: 18px; padding: 21px 0px;float:left;font-weight:normal;border-radius: 0;">
+                        ALERT</li>
+                     <li style="padding: 16px 5px;float: left;width: 70%;font-size: 15px; color:grey;line-height: 100%;margin: 0px 0;border: 1px solid #A8A8A8;border-left: 0px; font-weight:normal">Details provided by the candidate require attention</li>
+                  </ul>
+                  <div class="clearfix"></div>
+            </div>      
+            <div class="col-md-4" style="width:33%;float:left;margin-left:-5px;">
+               <ul class="clear" style="list-style:none;padding:10px 0 10px 0;margin:0;">
+                  <li class="green" style="background: #EF4438; color: #fff; text-transform: uppercase; width: 26%; text-align: center; font-size: 18px; padding: 21px 0px;float:left;font-weight:normal;border-radius: 0;">
+                     NEGATIVE</li>
+                  <li style="padding: 16px 6px;float: left;width: 70%;font-size: 15px; color:grey; line-height: 100%;margin: 0px 0;border: 1px solid #A8A8A8;border-left: 0px;border-radius:0 10px 10px 0; font-weight:normal;">Details provided by the candidate do not match</li>
+               </ul> 
+               <div class="clearfix"></div>
+            </div> 
+              
+               <div style="clear:both;"></div>
+            </div>
+            <div class="row">
+               <div class="col-md-4 primaryAnalysis" style="border-top: 2px solid #ccc; padding: 20px 0; margin: 40px 0 0 6px; width: 31%; float: left; position:relative;right:10px;">
+                  <div class="topAnnex" style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 24px; font-weight: 700; top: -22px; left:15%">
+                     PRIMARY ANALYSIS</div>
+                  <table width="100%" cellpadding="0" cellspacing="0" style="border: 3px solid #ccc; margin-bottom: 25px;border-top:4px solid #fd6455;">
+                     <tbody>
+                        <tr style="background:#f8f8f8;">
+                           {% if jsn.adhaar.address_len <= 70 %}
+                              <td class="text-center" style="padding: 15px 8px; font-size: 18px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D;height:69px;">
+                           {% elif jsn.adhaar.address_len <= 193 %}
+                              <td class="text-center" style="padding: 15px 8px; font-size: 18px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:75px;">
+                           {% else %}
+                              <td class="text-center" style="padding: 15px 8px; font-size: 18px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:80px;">
+                           {%endif%}   
+                              ID CHECK : {{jsn.final.id_type}}<br>
+                              {% if jsn.final.id_result == "Green" %}
+                                 <span class="red" style="color: #16A84A;
+                                 font-weight: bold;">CLEAR</span>
+                              {% else %}
+                                 <span class="red" style="color:#f00;
+                                 font-weight: bold;">NEGATIVE</span>
+                              {%endif%}
+                              
+                           </td>
+                        </tr>
+                        <tr style="background:#f8f8f8;">
+                           {% if jsn.adhaar.address_len <= 70 %}
+                              <td class="text-center" style="padding: 15px 8px; font-size: 18px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:69px;">
+                           {% elif jsn.adhaar.address_len <= 193 %}
+                              <td class="text-center" style="padding: 15px 8px; font-size: 18px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:75px;">
+                           {% else %}
+                              <td class="text-center" style="padding: 15px 8px; font-size: 18px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:80px;">
+                           {%endif%}                             
+                              CRIMINAL CHECK<br>
+                              {% if jsn.final.crime_result == "Green" %}
+                                 <span class="green" style="color: #16A84A;
+                                 font-weight: bold;">CLEAR</span>
+                              {% else %}
+                                 <span class="red" style="color:#f00;
+                                 font-weight: bold;">NEGATIVE</span>
+                              {%endif%}
+                              
+                           </td>
+                        </tr>
+                        <tr style="background:#ffefee">
+                           
+                           {% if jsn.adhaar.address_len <= 70 %}
+                              <td class="text-center" style="padding: 15px 8px; font-size: 18px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:69px;">
+                           {% elif jsn.adhaar.address_len <= 193 %}
+                              <td class="text-center" style="padding: 15px 8px; font-size: 18px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:75px;">
+                           {% else %}
+                              <td class="text-center" style="padding: 15px 8px; font-size: 18px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:80px;">
+                           {%endif%}                              
+                              FINAL RESULT<br>
+                              {% if jsn.final.final_result == "Green" %}
+                                 <span class="red" style="color:#16A84A;
+                                 font-weight: bold;">CLEAR</span>
+                              {% else %}
+                                 <span class="red" style="color:#f00;
+                                 font-weight: bold;">NEGATIVE</span>
+                              {%endif%}
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="col-md-8 primaryAnalysis" style="border-top: 2px solid #ccc; padding: 20px 0px; margin: 40px 0 0;width:68%;float:left;position:relative;">
+                  <div class="topAnnex" style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 24px; font-weight: 700; top: -22px; left:4%">
+                     IDENTITY CHECK : {{jsn.final.id_type}}</div>
+                     {% if jsn.final.id_result == "Green" %}
+                        <div class="checkPos" style=" position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 16px; font-weight: 700; top: -15px; color: #16A84A; right: 2%;">
+                           CLEAR</div>
+                     {% else %}
+                        <div class="checkPos red" style=" position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 16px; font-weight: 700; top: -15px; color: #16A84A; right: 2%;color:#f00">
+                           NEGATIVE</div>
+                     {%endif%}
+                  <table width="100%" cellpadding="0" cellspacing="0" style="border: 3px solid #ccc; margin-bottom: 25px;border-top:4px solid #fd6455;">
+                     <tbody>
+                        <tr style="background:#f8f8f8;">
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;white-space:nowrap;">
+                              Aadhaar number</td>
+                           <td class="borRight" style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;">
+                              {{jsn.adhaar.adhaar_number}}
+                              {% if jsn.adhaar.number_valid == "Green" %}
+                              <img src="{% static "img/open.png" %}" style="verticle-align:top;">
+                              {% else %}
+                              <img src="{% static "img/close.png" %}" style="verticle-align:top;">
+                              {%endif%}
+                              
+                           </td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              DOB</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              {{jsn.adhaar.dob}}
+                              {% if jsn.adhaar.dob_valid == "Green" %}
+                                 <img src="{% static "img/open.png" %}" style="verticle-align:top;">
+                              {%endif%}
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              Name</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;">
+                              {{jsn.adhaar.applicant_name}}</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              Age</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              {{jsn.adhaar.age_data}}
+                              {% if jsn.adhaar.age_valid == "Green" %}
+                              <img src="{% static "img/open.png" %}" style="verticle-align:top;">
+                              {% else %}
+                              <img src="{% static "img/close.png" %}" style="verticle-align:top;">
+                              {%endif%}
+                              
+                           </td>
+                        </tr>
+                        <tr style="background:#f8f8f8;">
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;white-space:nowrap;">
+                              Father's Name/Care of</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;">
+                              {{jsn.adhaar.father_name}}</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              Gender</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              {{jsn.adhaar.gender_data}}
+                              {% if jsn.adhaar.gender_valid == "Green" %}
+                              <img src="{% static "img/open.png" %}" style="verticle-align:top;">
+                              {% else %}
+                              <img src="{% static "img/close.png" %}" style="verticle-align:top;">
+                              {%endif%}
+                              
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              State</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;">
+                              {{jsn.adhaar.state_data}}
+                              {% if jsn.adhaar.state_valid == "Green" %}
+                              <img src="{% static "img/open.png" %}" style="verticle-align:top;">
+                              {% else %}
+                              <img src="{% static "img/close.png" %}" style="verticle-align:top;">
+                              {%endif%}
+                              
+                           </td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              Mobile No</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              {% if jsn.adhaar.mobile_data == "" %}
+                              Information not available from the source
+                              {% else %}
+                              {{jsn.adhaar.mobile_data}}
+                              {%endif%}
+                           </td>
+                        </tr>
+                        <tr style="background:#f8f8f8;">
+                           <td style="padding: 10px 12px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              Address</td>
+                           <td colspan="3" style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              {{jsn.adhaar.applicant_address}}</td>
+                        </tr>
+                        <tr>
+                           <td style="padding: 10px 12px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              Pin Code</td>
+                           <td colspan="3" style="padding: 10px 12px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              {{jsn.adhaar.pin_data}}</td>
+                        </tr>
+                        <tr style="background:#f8f8f8;">
+                           <td style="padding: 10px 23px; font-size: 15px; font-weight: normal; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;color:#828282" colspan="4" class="greyTxt"><b>REMARKS*.</b> The above <img src="{% static "img/open.png" %}"> details have been verified on {{jsn.adhaar.remark}}<br><b>MODE OF VERIFICATION :</b> Online</td>
+                        </tr>
+                     </tbody>
+               </table>
+               </div>	
+               <div style="clear:both;"></div>
+               <br/><br/><br/>
+               <div class="col-md-12 primaryAnalysis" style="border-top: 2px solid #ccc; padding: 20px 0px; margin: 0;position:relative;">
+                  <div class="topAnnex" style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 24px; font-weight: 700; top: -22px; left:3%">
+                     CRIMINAL CHECK DETAILS</div>
+                  {% if jsn.final.crime_result == "Green" %}
+                     <div class="checkPos" style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 16px; font-weight: 700; top: -15px; color: #0EA900; right: 2%;">
+                        CLEAR</div>
+                  {% else %}
+                     <div class="checkPos red" style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 16px; font-weight: 700; top: -15px; color: #f00; right: 2%;">
+                        NEGATIVE</div>
+                  {%endif%}
+                  <table width="100%" cellpadding="0" cellspacing="0" style="border:3px solid #ccc;margin-bottom:25px;margin:0 auto;border-top:4px solid #fd6455;">
+                     <tbody>
+                        <tr style="background:#f8f8f8;">
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;">
+                              (a) Name of the applicant</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              {{jsn.crime.applicant_name}}</td>
+                        </tr>
+                        <tr>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;">
+                              (b) Father's Name/Care of</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              {{jsn.crime.father_name}}</td>
+                        </tr>
+                        <tr style="background:#f8f8f8;">
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;">
+                              (c) Address</td>
+                           <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                              {{jsn.crime.applicant_address}}</td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" style="padding: 13px 10px; font-size: 15px; font-weight: normal; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;color:#828282">
+                              1. The information found is reported on an ‘as is’ and ‘as available’ basis, from respective 
+                              data source, on the date of generation of this report, the same should not be considered as 
+                              a legal opinion or pronouncement by HelloVerify on the matter or subject individual.<br> 
+                              2. We have collected the information from publicly available records and data or data source, which 
+                              may not be completely up-to-date or conclusive, as they are not under the control of HelloVerify. 
+                              Accordingly, HelloVerify cannot guarantee that the information given is 100% accurate.<br> 
+                              3. Since all the sources of information are not updated or available in an online medium, absence 
+                              of matches do not mean that there is no ongoing court case for the individual. Names are matched both 
+                              fully and partially and hence might include cases pertaining to a person involved with similar name or 
+                              details.<br> 
+                              4. Court checks are also limited by address information and might lead to mismatches or missing information 
+                              when the address provided is not the same as the one that appears in court records.<br>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </b></div><b>
+		 <br/>
+         <div class="container annexture" style="page-break-before: always;position:relative;margin:50px auto;padding:0px 0;width:1120px;margin:0 auto;">
+         </div><br><br>
+         <div style="clear:both"></div>
+         <div class="row">
+            <div class="container annexture" style="border:2px solid #ccc;position:relative;padding:40px 0px;width:1120px;margin:0 auto;">
+               <div class="topAnnex" style="position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:24px;font-weight:700;top:-26px;left:10px;">
+                  AADHAAR CARD ANNEXURE</div>
+            <table width="96%" cellpadding="0" cellspacing="0" style="border:3px solid #e9e9e9;margin-bottom:25px; margin-bottom: 25px;border-top:4px solid #fd6455;margin:10px auto;table-layout:fixed;">
+               <tbody style="width:100%;border-top:4px solid #A6A6A6">
+                  <tr style="border-bottom:1px solid #ccc;">
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        Aadhaar Verification</td>
+                     {% if jsn.final.id_result == "Green" %}
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;font-weight:500;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;color: #0EA900;">
+                        <strong>CLEAR</strong><img src="{% static "img/open.png" %}" style="padding-left:4px;"></td>
+                     {% else %}
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;font-weight:500;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;color:#f00;">
+                        <strong>NEGATIVE</strong><img src="{% static "img/close.png" %}" style="padding-left:4px;"></td>
+                     {%endif%}
+                     
+                  </tr>
+                  <tr style="border-bottom:1px solid #ccc;background:#f8f8f8;">
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">Aadhaar Number</td>
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        {{jsn.adhaar.adhaar_number}}</td>
+                  </tr>
+                  {% if jsn.adhaar.dob_valid == "Green" %}
+                  <tr style="border-bottom:1px solid #ccc;">
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        DOB</td>
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        {{jsn.adhaar.dob}}</td>
+                  </tr>
+                  {%endif%}
+                  <tr style="border-bottom:1px solid #ccc;">
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        Age Range</td>
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        {{jsn.adhaar.age_data}}</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #ccc;background:#f8f8f8;">
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        Gender</td>
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        {{jsn.adhaar.gender_data}}</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #ccc;">
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        State</td>
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        {{jsn.adhaar.state_data}}</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #ccc;background:#f8f8f8;">
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        Mobile Number </td>
+                     <td style="padding:8px 10px;font-weight:bold;font-size:16px;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #ccc;">
+                        {% if jsn.adhaar.mobile_data == "" %}
+                        Information not available from the source
+                        {% else %}
+                        {{jsn.adhaar.mobile_data}}
+                        {%endif%}
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div style="clear:both"></div>
+			
+         <div class="container annexture" style="page-break-before: always;position:relative;margin:50px auto;padding:0px 0;width:1120px;margin:0 auto;">
+         </div><br><br>
+         <div style="clear:both"></div>
+         <div class="row">
+            <div class="container annexture" style="border:2px solid #ccc;position:relative;padding:40px 0px;width:1120px;margin:0 auto;">
+               <div class="topAnnex" style="position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:24px;font-weight:700;top:-26px;left:10px;">
+                  CRIMINAL ANNEXURE</div>
+               <table width="96%" cellpadding="0" cellspacing="0" style="border:3px solid #e9e9e9; border-top:4px solid #fd6455;margin:0 auto;">
+                  <tbody style="width:100%;border-top:4px solid #A6A6A6">
+                     <tr style="border-bottom:1px solid #e9e9e9;">
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           Check Status</td>
+                        {% if jsn.final.crime_result == "Green" %}
+                           <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;color: #0EA900;">
+                              <strong>CLEAR</strong><img src="{% static "img/open.png" %}" style="padding-left:4px;"></td>
+                        {% else %}
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;color: #f00;">
+                           <strong>NEGATIVE</strong><img src="{% static "img/close.png" %}" style="padding-left:4px;"></td>   
+                        {%endif%}
+                     </tr>
+                     <tr style="border-bottom:1px solid #e9e9e9;background:#f8f8f8;">
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           Name of the Applicant </td>
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           {{jsn.crime.applicant_name}}</td>
+                     </tr>
+                     <tr style="border-bottom:1px solid #e9e9e9;">
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           Father's Name/Care of</td>
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           {{jsn.crime.father_name}}</td>
+                     </tr>
+                     <tr style="border-bottom:1px solid #e9e9e9;background:#f8f8f8;">
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           DOB</td>
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           {{jsn.crime.dob}}</td>
+                     </tr>
+                     <tr style="border-bottom:1px solid #e9e9e9;">
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           Address</td>
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           {{jsn.crime.applicant_address}}</td>
+                     </tr>
+                     <tr style="border-bottom:1px solid #e9e9e9;background:#f8f8f8;">
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           Mobile Number </td>
+                        <td style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           {{jsn.crime.applicant_mobile}}</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <div style="margin-top:25px;">
+                  <table width="96%" cellpadding="0" cellspacing="0" style="text-align:center;border:3px solid #e9e9e9;margin-bottom:25px;margin:0 auto;border-top:4px solid #fd6455;">
+                     <tbody style="width:100%;border-top:4px solid #fd6455">
+                        <tr style="border-bottom:1px solid #e9e9e9;text-align:center;">
+                           <td colspan="4" style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                              Sources </td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #e9e9e9;">
+                           <td style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                              HIGH COURT </td>
+
+                           <td class="borRight" style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                              DISTRICT &amp; SESSIONS COURT</td>
+
+                           <td style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                              MAGISTRATE COURT</td>
+
+                           <td style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                              SUPREME COURT</td>   
+                        </tr>
+                        <tr style="border-bottom:1px solid #e9e9e9;">
+                           <td colspan="4" style="padding: 13px 10px; font-size: 15px; font-weight: normal; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;color:#828282">
+                              In conclusion, as on date of this search, there appears to be{{jsn.crime.record_found}} records found against the
+                              Subject, at the given address</td>
+
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            
+         {% if jsn.final.crime_result == "Green" %}
+            </div>
+            </div>
+         {%endif%}
+         {% if jsn.final.crime_result == "Red" %}
+         <div class="container annexture" style="border:1px solid #ccc;position:relative;padding:40px 0px;width:1120px;margin:0 auto;visibility: hidden;">
+            <div style="margin-top:10px; visibility: visible;">
+         {%else%}      
+         <div class="container annexture" style="border:1px solid #ccc;position:relative;padding:40px 0px;width:1120px;margin:0 auto;visibility: hidden;">
+            <div style="margin-top:10px; visibility: hidden;">
+         {%endif%}
+         <h2 style="font-size:16px;font-weight:bold;text-align:center;">
+            {{jsn.crime.case_detail.courtname}}<br>Case Details</h2>
+         <table width="96%" cellpadding="0" cellspacing="0" style="border:1px solid #ccc;margin-bottom:25px;margin:0 auto;border-top:4px solid #fd6455;background-color:WhiteSmoke;text-align:center;">
+            <tbody style="width:100%;border-top:4px solid #A6A6A6; text-align:left;">
+               <tr style="border-bottom:1px solid #ccc;">
+                  <td style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     Case Type</td>
+
+                  <td colspan="3" class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     {{jsn.crime.case_detail.casetypename}}</td>
+
+               </tr>
+
+               <tr style="border-bottom:1px solid #ccc;">
+                  <td style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     Filling Number</td>
+                  <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     {{jsn.crime.case_detail.filingnumber}}</td>
+                  <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     Filling Date</td>
+                  <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     {{jsn.crime.case_detail.filingdate}}</td>
+               </tr>
+
+               <tr style="border-bottom:1px solid #ccc;">
+                  <td style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     Registration Number</td>
+                  <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     {{jsn.crime.case_detail.regnumber}}</td>
+                  <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     Registration Date</td>
+                  <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     {{jsn.crime.case_detail.regdate}}</td>
+               </tr>
+               <tr style="border-bottom:1px solid #ccc;">
+                  <td style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     CNR Number</td>
+
+                  <td colspan="3" class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                     {{jsn.crime.case_detail.cinnumber}}</td>
+
+               </tr>
+            </tbody>
+         </table>
+      </div>
+
+      {% if jsn.final.crime_result == "Red" %}
+         <div style="margin-top:10px; visibility: visible;">
+      {%else%}
+         <div style="margin-top:10px; visibility: hidden;">
+      {%endif%}
+            <h2 style="font-size:16px;font-weight:bold;text-align:center;">Case Status</h2>
+            <table width="96%" cellpadding="0" cellspacing="0" style="border:1px solid #ccc;margin-bottom:25px;margin:0 auto;border-top:4px solid #fd6455;background-color: #fbf6d9;text-align:center;">
+               <tbody style="width:100%;border-top:4px solid #A6A6A6; text-align:left;">
+                  <tr style="border-bottom:1px solid #ccc;">
+                     <td style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;color:#f00;">
+                        First Hearing Date</td>
+
+                     <td colspan="3" class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;color:#f00;">
+                        {{jsn.crime.case_detail.hearingdate}}</td>
+
+                  </tr>
+                  <tr style="border-bottom:1px solid #ccc;">
+                     <td style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;color:#f00;">
+                        Court Number and Judge</td>
+
+                     <td colspan="3" class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;color:#f00;">
+                        {{jsn.crime.case_detail.courtnumberandjudge}}</td>
+
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         {% if jsn.final.crime_result == "Red" %}
+            <div style="margin-top:10px; visibility: visible;">
+         {%else%}
+            <div style="margin-top:10px; visibility: hidden;">
+         {%endif%}
+               <h2 style="font-size:16px;font-weight:bold;text-align:center;">Petitioner and Advocate</h2>
+               <table width="96%" cellpadding="0" cellspacing="0" style="border:1px solid #ccc;margin-bottom:25px;margin:0 auto;border-top:4px solid #fd6455;background-color:AliceBlue;text-align:center;">
+                  <tbody style="width:100%;border-top:4px solid">
+                     <tr style="border-bottom:1px solid #ccc;">
+                        <td style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc; text-align: center;">
+                           {{jsn.crime.case_detail.petitioneraddress}}</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         {% if jsn.final.crime_result == "Red" %}
+            <div style="margin-top:10px; visibility: visible;">
+         {%else%}
+            <div style="margin-top:10px; visibility: hidden;">
+         {%endif%}
+               <h2 style="font-size:16px;font-weight:bold;text-align:center;">Respondent and Advocate
+               </h2>
+               <table width="96%" cellpadding="0" cellspacing="0" style="border:1px solid #ccc;margin-bottom:25px;margin:0 auto;border-top:4px solid #fd6455;background-color:Gainsboro;text-align:center;">
+                  <tbody style="width:100%;border-top:4px solid">
+                     <tr style="border-bottom:1px solid #ccc;">
+                        <td style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc; text-align: center;">
+                           {{jsn.crime.case_detail.respondentaddress}}</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         {% if jsn.final.crime_result == "Red" %}
+            <div style="margin-top:10px; visibility: visible;">
+         {%else%}
+            <div style="margin-top:10px; visibility: hidden;">
+         {%endif%}
+               <h2 style="font-size:16px;font-weight:bold;text-align:center;">Acts</h2>
+               <table width="96%" cellpadding="0" cellspacing="0" style="border:1px solid #ccc;margin-bottom:25px;margin:0 auto;border-top:4px solid #fd6455;text-align:center;">
+                  <tbody style="width:100%;border-top:4px solid #A6A6A6">
+                     <tr style="border-bottom:1px solid #ccc;">
+                        <td style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;text-align: center;">
+                           <b>Under Act(s)</b></td>
+
+                        <td colspan="3" class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;text-align: center;">
+                           <b>Under Section(s)</b></td>
+
+                     </tr>
+                     <tr style="border-bottom:1px solid #ccc;">
+                        <td style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;text-align: center;">
+                           {{jsn.crime.case_detail.underact}}</td>
+
+                        <td colspan="3" class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;text-align: center;">
+                           {{jsn.crime.case_detail.undersection}}</td>
+
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            {% if jsn.final.crime_result == "Red" %}
+               <div style="margin-top:10px; visibility: visible;">
+            {%else%}
+               <div style="margin-top:10px; visibility: hidden;">
+            {%endif%}
+                  <h2 style="font-size:16px;font-weight:bold;text-align:center;">History of Case
+                     Hearing</h2>
+                  <table width="96%" cellpadding="0" cellspacing="0" style="border:1px solid #ccc;margin-bottom:25px;margin:0 auto;border-top:4px solid #fd6455;background-color:WhiteSmoke;text-align:center;">
+                     <tbody style="width:100%;border-top:4px solid #A6A6A6; text-align:left;">
+                        <tr style="border-bottom:1px solid #ccc;">
+                           <th class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              <b>Registration Number</b></th>
+                           <th class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              <b>Judge</b></th>
+                           <th class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              <b>Business On Date</b></th>
+                           <th class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              <b>Hearing Date</b></th>
+                           <th class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              <b>Purpose of Hearing</b></th>
+                        </tr>
+                        <tr style="border-bottom:1px solid #ccc;">
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.1}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.2}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.3}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.4}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.5}}</td>
+                        </tr>
+                        {% if jsn.crime.case_detail.caseflow_len > 5 %}
+                        <tr style="border-bottom:1px solid #ccc;">
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.6}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.7}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.8}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.9}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.10}}</td>
+                        </tr>
+                        {%endif%}
+                        {% if jsn.crime.case_detail.caseflow_len > 10 %}
+                        <tr style="border-bottom:1px solid #ccc;">
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.11}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.12}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.13}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.14}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.15}}</td>
+                        </tr>
+                        {%endif%}
+                        {% if jsn.crime.case_detail.caseflow_len > 15 %}
+                        <tr style="border-bottom:1px solid #ccc;">
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.16}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.17}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.18}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.19}}</td>
+                           <td class="borRight" style="border-bottom:1px solid #ccc;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;">
+                              {{jsn.crime.case_detail.caseflow.20}}</td>
+                        </tr>
+                        {%endif%}
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+   {% if jsn.final.crime_result == "Red" %}
+      </div>
+      </div>
+   {%endif%}   
+            
+            <div style="clear:both;"></div>
+						
+      </b></article><b>
+
+      <div style="width:1120px;margin:0px auto 30px;padding:0 10px;page-break-before: always;">
+         <div class="container">
+            <div class="row">
+               <div style="float:left;width:30%;border-right:0px solid #ccc;padding:20px 0;"> <img src="{% static "img/logo.png" %}" class="img-responsive"></div>
+
+               <div style="clear:both;"></div>
+            </div>
+         </div>
+      </div>
+      <div class="container annexture" style="border:1px solid #ccc;position:relative;padding:40px 10px;width:1120px;margin:0 auto" "="">
+            <div class=" topAnnex" style="left:10px;position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:24px;font-weight:700;top:-26px">
+         RESTRICTIONS &amp; LIMITATIONS</div>
+      <table width="100%" cellpadding="0" cellspacing="0" style="border: 1px solid #ccc;margin-bottom: 25px">
+         <tbody>
+
+            <tr>
+               <td colspan="2" style="padding:6px;font-size:14px;line-height:120%;padding:25px;">
+                  <h2 style="text-align:cener;font-size:26px;text-align:center;">Legal Disclaimer</h2>
+                  <p style="font-size:15px;font-weight:bold;text-align:center;margin-right:100px;margin-left:90px;justify-content: center;text-align: justify;text-justify: inter-word;">
+                     All rights reserved. The report and its contents are the property of Hello Verify India Private
+                     Limited (Hello Verify) and may not be reproduced in any manner without the express written
+                     permission of Hello Verify.</p>
+                  <p style="font-size:15px;font-weight:normal;text-align:center;margin-right:100px;margin-left:90px;text-align: justify;text-justify: inter-word;">
+                     The Reports and Information contained herein are confidential in nature and are meant only for the
+                     internal use of the Hello Verify client for the assessment of the background of their applicant.
+                     The information and report are subject to change subject to the change in factual information.
+                     Information and report including text, graphics, links or other items are provided on an 'as is',
+                     'as available' basis. Hello verify expressly disclaims liability for errors or omissions in this
+                     report, information and material for information are obtained from various sources as per industry
+                     practice. No warranty of any kind, implied, express or statutory, including but not limited to the
+                     warranties of non-infringement of third party rights, title, merchantability, fitness for a
+                     particular purpose and freedom from computer virus, is given in conjunction with the information
+                     and materials. </p>
+                  <p style="font-size:15px;font-weight:normal;text-align:center;margin-right:100px;margin-left:90px;text-align: justify;text-justify: inter-word;">
+                     Our findings are based on the information available to us and industry practice and hence cannot be
+                     considered to be conclusive. We request you recognize that we are not the source of the data
+                     gathered and our reports are based on the information available to us as and per industry practice;
+                     therefore we cannot guarantee the accuracy of information collected. Should additional information
+                     or documentation become available which impacts our conclusions reached in our reports, we reserve
+                     the right to amend our findings accordingly.</p>
+                  <p style="font-size:15px;font-weight:normal;text-align:center;margin-right:100px;margin-left:90px;text-align: justify;text-justify: inter-word;">
+                     These reports are not intended for publication or circulation. They should not be shared with any
+                     other person including the applicant nor be reproduced for any other purpose, in whole or in part,
+                     without our prior written consent in each specific instance from Hello Verify. Our reports cannot
+                     be relied upon by any other person and we expressly disclaim all responsibility or liability for
+                     any costs, damages, losses, liabilities, expenses incurred by anyone as a result of circulation,
+                     publication, reproduction or use of our reports contrary to the provisions of this paragraph. </p>
+                  <p style="font-size:15px;font-weight:normal;text-align:center;margin-right:100px;margin-left:90px;text-align: justify;text-justify: inter-word;">
+                     The Report and Information consists of statements of opinion and not statements of fact or
+                     recommendations. You should obtain any additional information necessary to make an informed
+                     decision prior to usage of the report. Hello Verify and the directors, officers, agents, and
+                     representatives, assume no (and hereby disclaims all) responsibility or liability that may arise
+                     directly or indirectly from usage of such reports. </p>
+                  <p style="font-size:15px;font-weight:normal;text-align:center;margin-right:100px;margin-left:90px;text-align: justify;text-justify: inter-word;">
+                     Due to the limitations mentioned above, the result of our work with respect to the background
+                     checks should be considered only as a guideline. Our reports and comments should not be considered
+                     a definitive pronouncement on the individual.</p>
+                  <br><br><br><br><br><br><br><br><br><br><br><br>
+                  <p style="font-size:15px;font-weight:bold;text-align:center;">Hello Verify Confidential</p>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      </div>
+
+
+</b></section></body></html><html><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><meta name="Robots" content="NOINDEX " /></head><body></body>
+                <script type="text/javascript">
+                 var gearPage = document.getElementById('GearPage');
+                 if(null != gearPage)
+                 {
+                     gearPage.parentNode.removeChild(gearPage);
+                     document.title = "Error";
+                 }
+                 </script>
+                 </html>

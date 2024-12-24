@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://711de4f227ba.ngrok.io/report/report/123 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <title>Report</title>
+   <style type="text/css"></style>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+   <div style="border-top:10px solid #000;border-bottom:1px solid #ccc;width:1120px;margin:0px auto 30px;padding:0; margin-bottom:40px;">
+      <div class="container">
+         <div class="row">
+            <div style="float:left;width:30%;border-right:0px solid #ccc;padding:0; margin-top:1px;"> <img src="{% static "img/logo.png" %}" class="img-responsive"></div>
+            <div style="float:right;width:69%;padding:0px 0;border-left:1px solid #ccc;background:#f8f8f8;">
+               <ul style="padding:0;margin:0;list-style:none;float:left;width:45%;padding:10px 0;">
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Client Name: <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">{{jsn.header.client_name}}</span>
+                  </li>
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Mobile Number : <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">{{jsn.header.client_mob}}</span>
+                  </li>
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Report Date: <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">{{jsn.header.report_date}}</span>
+                  </li>
+               </ul>
+               <ul style="padding:0;margin:0;list-style:none;float:left;width:45%;border-left:1px solid #ccc;padding:10px 0;">
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Applicant Name: <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">{{jsn.header.applicant_name}}</span>
+                  </li>
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Applicant Mobile Number : <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">{{jsn.header.applicant_phone}}</span>
+                  </li>
+                  <li style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Applicant Address: <span style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">Not Available</span>
+                  </li>
+               </ul>
+            </div>
+            <div style="clear:both;"></div>
+         </div>
+      </div>
+   </div>
+   <section>
+      <article>
+         <div class="container annexture" style="border-top:2px solid #ccc;position:relative;margin:50px auto;padding:40px 0;width:1120px;margin:0 auto;">
+            <div class="topAnnex" style="position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:28px;font-weight:700;top:-21px;left:15px;">
+               BACKGROUND SCREENING REPORT</div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="verifyEmp">
+                     <ul style="margin:0;padding:0 0px;list-style:none;">
+                        <li style="float: left; background: #4D4E4E; border: 2px solid #A8A8A8; border-right:0px; border-radius: 12px 0px 0px 12px; color: #fff; padding: 10px; width: 30%;font-weight:bold;text-align:center;">
+                           <b>{{jsn.verify}}</b></li>
+                        <li class="second" style="background: #fff; width: 67%; border-radius: 0px 12px 12px 0px; float: right; padding: 2px 2px; border: 2px solid #A8A8A8;border-left:0px;color:#fff;font-weight:bold;text-align:center;position:relative;left:-6px;">
+                           <div style="background:#878EA7;width:100%;line-height:35px;border-radius:0 10px 10px 0"><b>{{jsn.package_name}}</b></div></li><b>
+                     </b></ul><b>
+                  </b></div><b>
+               </b></div><b>
+               <div style="clear:both;"></div>
+            </b></div><b>
+            <div class="clearfix"></div>
+            <div class="row">
+               <div class="col-md-4" style="width:34.4%;float:left;">
+                  <ul class="clear" style="list-style:none;padding:10px 0 10px 0px;margin:0;">
+                     <li class="green" style="background: #0EA900; color: #fff; text-transform: uppercase; width: 26%; text-align: center; font-size: 18px; padding: 20px 0px;float:left;font-weight:normal;border-radius: 12px 0 0 12px;border: 1px solid #A8A8A8;">
+                        CLEAR</li>
+                     <li style="padding: 16px 5px;float: left;width: 70%;font-size: 15px; color:grey;line-height: 100%;margin: 0px 0;border: 1px solid #A8A8A8;border-left: 0px; font-weight:normal">Details provided by the candidate are accurate</li>
+                  </ul>
+                  <div class="clearfix"></div>
+               </div>
+			   <div class="col-md-4" style="width:33%;float:left;margin-left:-3px;">
+                  <ul class="clear" style="list-style:none;padding:10px 0 10px 0;margin:0;">
+                     <li class="green" style="background: #FAA41A; color: #fff; text-transform: uppercase; width: 26%; text-align: center; font-size: 18px; padding: 21px 0px;float:left;font-weight:normal;border-radius: 0;">
+                        ALERT</li>
+                     <li style="padding: 16px 5px;float: left;width: 70%;font-size: 15px; color:grey;line-height: 100%;margin: 0px 0;border: 1px solid #A8A8A8;border-left: 0px; font-weight:normal">Details provided by the candidate require attention</li>
+                  </ul>
+                  <div class="clearfix"></div>
+            </div>      
+            <div class="col-md-4" style="width:33%;float:left;margin-left:-5px;">
+               <ul class="clear" style="list-style:none;padding:10px 0 10px 0;margin:0;">
+                  <li class="green" style="background: #EF4438; color: #fff; text-transform: uppercase; width: 26%; text-align: center; font-size: 18px; padding: 21px 0px;float:left;font-weight:normal;border-radius: 0;">
+                     NEGATIVE</li>
+                  <li style="padding: 16px 6px;float: left;width: 70%;font-size: 15px; color:grey; line-height: 100%;margin: 0px 0;border: 1px solid #A8A8A8;border-left: 0px;border-radius:0 10px 10px 0; font-weight:normal;">Details provided by the candidate do not match</li>
+               </ul> 
+               <div class="clearfix"></div>
+            </div> 
+              
+               <div style="clear:both;"></div>
+            </div>
+            <div class="row">
+               <div class="col-md-4 primaryAnalysis" style="border-top: 2px solid #ccc; padding: 20px 0; margin: 40px 0 0 6px; width: 31%; float: left; position:relative;right:10px;">
+                  <div class="topAnnex" style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 24px; font-weight: 700; top: -22px; left:15%">
+                     PRIMARY ANALYSIS</div>
+                  <table width="100%" height="20.5%" cellpadding="0" cellspacing="0" style="border: 3px solid #ccc; margin-bottom: 25px;border-top:4px solid #fd6455;">
+                     <tbody>
+                        <tr style="background:#f8f8f8;">
+                           <td class="text-center" style="padding: 15px 10px; font-size: 20px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:56px;">
+                              ID CHECK<br>
+                                 <span class="red" style="color:#031280;
+                                 font-weight: bold;">Incomplete Information</span>                              
+                           </td>
+                        </tr>
+                        <tr style="background:#f8f8f8;">
+                           <td class="text-center" style="padding: 15px 10px; font-size: 20px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:56px;">
+                              EMPLOYMENT CHECK<br> 
+                                 <span class="red" style="color:#031280;
+                                 font-weight: bold;">Incomplete Information</span>                              
+                           </td>
+                        </tr>
+                        <tr style="background:#f8f8f8;">
+                           <td class="text-center" style="padding: 15px 10px; font-size: 20px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:56px;">
+                              CRIMINAL CHECK<br>
+                                 <span class="red" style="color:#031280;
+                                 font-weight: bold;">Incomplete Information</span>
+                           </td>
+                        </tr>
+                        <tr style="background:#ffefee">
+                           
+                           <td class="text-center" style="padding: 16px 10px; font-size: 20px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:56px;">
+                              FINAL RESULT<br>
+                                 <span class="red" style="color:#031280;
+                                 font-weight: bold;">Incomplete Information</span>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="col-md-8 primaryAnalysis" style="border-top: 2px solid #ccc; padding: 20px 0px; margin: 40px 0 0;width:68%;float:left;position:relative;">
+                  <div class="topAnnex" style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 24px; font-weight: 700; top: -22px; left:4%">
+                     IDENTITY CHECK</div>
+                        <div class="checkPos red" style=" position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 16px; font-weight: 700; top: -15px; color: #16A84A; right: 2%;color:#031280">
+                           Incomplete Information</div>
+                  <table width="100%" cellpadding="0" cellspacing="0" style="border: 3px solid #ccc; margin-bottom: 25px;border-top:4px solid #fd6455;">
+                     <tbody>
+						
+                     <tr>
+                        <td style="position: relative;"><br><img src="{% static "img/nodoc.png" %}" style="background:#f8f8f8; width:170px; height:150px; margin-bottom: 0px;margin-top: 13px; margin-left: 290px;"></td>
+                     </tr>
+                     <tr style="background:#f8f8f8;">
+                        <td style="padding: 12px 10px; font-size: 16px; font-weight: normal; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;color:#4F4D4D;background:#fff;height:57px; text-align: center;" colspan="4" class="greyTxt">
+                           <b>Identity Document Not Provided</b></td>
+                     </tr>
+                     <tr style="background:#f8f8f8;">
+                        <td style="padding: 12px 10px; font-size: 15px; font-weight: normal; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;color:#828282;background:#fff;height:57px" colspan="4" class="greyTxt"><b>
+                           REMARKS*.</b><br>Incomplete Information: The applicant hasn't provided the relevant information to conduct the background screening.</td>
+                     </tr>
+					   </tbody>
+               </table>
+            </div>
+            <div style="clear:both;"></div>
+            <br/><br/><br/>
+            <div class="col-md-12 primaryAnalysis" style="border-top: 2px solid #ccc; padding: 20px 0px; margin: 0;position:relative;">
+               <div class="topAnnex" style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 24px; font-weight: 700; top: -22px; left:3%">
+                  EMPLOYMENT DETAILS</div>
+               <div class="checkPos red" style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 16px; font-weight: 700; top: -15px; color: #031280; right: 2%;">
+                  Incomplete Information</div>
+                  <div style="clear:both;"></div>
+                  <table width="100%" cellpadding="0" cellspacing="0" style="border:3px solid #ccc;margin-bottom:25px;margin:0 auto;border-top:4px solid #fd6455;">
+                     <tbody>
+                        <tr style="background:#f6f6f6">
+                           <th style="text-align:center;padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;width: 350px;">Organisation Name</th>
+                           <th style="text-align:center;padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;width: 350px;">Date of Joining</th>
+                           <th style="text-align:center;padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;width: 350px;">Date of Leaving</th>
+                           <th style="text-align:center;padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;width: 350px;">Address</th>
+                        </tr>
+                        <tr>
+                           <td style="text-align:center;padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;">-</td>
+                           <td style="text-align:center;padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;white-space: nowrap;">-</td>
+                           <td style="text-align:center;padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;white-space: nowrap;">-</td>
+                           <td style="text-align:center;padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;">-</td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" style="padding: 13px 10px; font-size: 15px; font-weight: normal; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;color:#828282;white-space: nowrap;">
+                              <b>REMARKS*.</b><br>Incomplete Information: The applicant hasn't provided the relevant information to conduct the background screening.</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>	
+               <div style="clear:both;"></div>
+               <br/><br/><br/>
+               <div class="col-md-12 primaryAnalysis" style="border-top: 2px solid #ccc; padding: 20px 0px; margin: 0;position:relative;">
+                  <div class="topAnnex" style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 24px; font-weight: 700; top: -22px; left:3%">
+                     CRIMINAL CHECK DETAILS</div>
+                  <div class="checkPos red" style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 16px; font-weight: 700; top: -15px; color: #031280; right: 2%;">
+                     Incomplete Information</div>
+                  <table width="100%" cellpadding="0" cellspacing="0" style="border:3px solid #ccc;margin-bottom:25px;margin:0 auto;border-top:4px solid #fd6455;">
+                  <tbody>
+                     <tr style="background:#f8f8f8;">
+                        <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;width: 265px;">
+                           (a) Name of the applicant</td>
+                        <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                           -</td>
+                     </tr>
+                     <tr>
+                        <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;width: 265px;">
+                           (b) Father Name</td>
+                        <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                           -</td>
+                     </tr>
+                     <tr style="background:#f8f8f8;">
+                        <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;width: 265px;">
+                           (c) Address</td>
+                        <td style="padding: 8px 10px; font-size: 15px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                           -</td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" style="padding: 13px 10px; font-size: 15px; font-weight: normal; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;color:#828282">
+                           <b>REMARKS*.</b><br>Incomplete Information: The applicant hasn't provided the relevant information to conduct the background screening.</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </div>
+            </div>
+         </b></div><b>
+      </div>
+
+
+</b></section></body></html><html><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><meta name="Robots" content="NOINDEX " /></head><body></body>
+                <script type="text/javascript">
+                 var gearPage = document.getElementById('GearPage');
+                 if(null != gearPage)
+                 {
+                     gearPage.parentNode.removeChild(gearPage);
+                     document.title = "Error";
+                 }
+                 </script>
+                 </html>

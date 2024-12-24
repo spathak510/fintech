@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+ body{
+     font-family: 'Roboto', sans-serif;
+}
+ h1{
+     text-align: center;
+     color: #4181ee;
+}
+ .wrapper{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+ .card{
+    max-width: 700px;
+     min-height: 250px;
+     background: #02b875;
+     padding: 30px;
+     box-sizing: border-box;
+     color: #0a0909;
+     margin:20px;
+     box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+}
+ .card:nth-child(2){
+    background: #4181ee;
+}
+ .card:last-child{
+    background: #e5e5e5;
+}
+ .card-title{
+     margin-top: 0;
+     font-size: 16px;
+     font-weight: 600;
+     letter-spacing: 1.2px;
+}
+ .card-content{
+     font-size: 14px;
+     letter-spacing: 0.5px;
+     line-height: 1.5;
+}
+ .card-btn{
+  display: block;
+    margin-left: auto;
+    /* border: 2px solid #FFF; */
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 35px;
+    font-weight: 200;
+    transition: all 0.5s;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #4c5be7;
+    color: white;
+}
+ .card-btn:hover{
+    color:#02b875;
+    background: #FFF;
+}
+ .card:nth-child(2) .card-btn:hover{
+    color:#4181ee;
+    background: #FFF;
+}
+ .card:last-child .card-btn:hover{
+    color:#673ab7;
+     background: #FFF;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+
+ .card:last-child{
+        background: transparent;
+    box-shadow: none;
+}
+
+.wrapper {
+    background-color: #efefef;
+    height: 1750px;
+}
+
+/*.card {
+    position: relative;
+    top: 20%;
+}*/
+
+.card_main {
+    width: 100%;
+    position: relative;
+    top: 20%;
+}
+
+}
+
+
+	</style>
+</head>
+<body>
+
+<div class="wrapper">
+<div class="card">
+
+    <div class="card_main">
+
+	<h3 class="card-title" style="text-align: center;font-size: 58px;
+    font-family: sans-serif;margin-top: 85px;">Payment Successful.<br>
+  Thank You</h3>
+		<p class="card-content" style="text-align: center; font-size: 38px;
+    font-family: sans-serif;"><strong>We will share your invoice and redemption pin on your WhatsApp number.</strong></p>
+
+    <br>
+    <p class="card-title" style="text-align: center; font-size: 32px;
+    font-family: sans-serif;">Click below to go to whatsapp</p>
+        <a style="text-decoration: none;" href="https://api.whatsapp.com/send?phone=14157924931"><input type="button" value="Click Me" class="card-btn">
+        </a>        
+        <br>
+		<br>
+		<p class="card-title" style="text-align: center; font-size: 32px;
+    font-family: sans-serif;">In case of any queries,please contact</p>
+
+		<p class="card-title" style="text-align: center; font-size: 32px;
+    font-family: sans-serif;color: #0089ff;">hellov@helloverify.com</p>
+
+</div>
+		
+	</div>
+
+
+
+</div>
+
+
+</body>
+</html>

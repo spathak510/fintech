@@ -1,0 +1,1 @@
+default_app_config = 'hv_whatsapp_api.apps.HvWhatsappApiConfig'

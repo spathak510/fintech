@@ -1,0 +1,269 @@
+{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Your Website</title>
+	{% comment %} <link rel="stylesheet" href="http://efa753e4.ngrok.io/static/bootstrap.min.css" crossorigin="anonymous">{% endcomment %}
+	<script type="text/javascript" src="http://efa753e4.ngrok.io/static/jquery-3.5.1.min.js"></script>
+	<script src="http://efa753e4.ngrok.io/static/bootstrap.min.js" crossorigin="anonymous"></script> 
+	<style type="text/css">
+		header{border-top:10px solid #000;border-bottom:1px solid #ccc}.annexture{border:1px solid #ccc;position:relative;margin:50px auto;padding:40px 20px}.annexture .topAnnex{position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:24px;font-weight:700;top:-26px}table{border:1px solid #ccc;margin-bottom:25px}table tbody{width:100%;border-top:4px solid #f47a69}table tbody tr:nth-child(odd){background:#f8f6f9;border-top:1px solid #ccc}table tbody tr.nobg{background:0 0}table tbody tr.nobg td{color:#ccc}table tbody tr td{padding:8px 10px;font-size:16px;font-weight:500;position:relative}table tbody tr td:nth-child(odd){border-right:1px solid #ccc}table tbody tr td.borRight{border-right:1px solid #ccc}.checkmark__circle{stroke-dasharray:166;stroke-dashoffset:166;stroke-width:2;stroke-miterlimit:10;stroke:#7ac142;fill:none;animation:stroke .6s cubic-bezier(.65,0,.45,1) forwards}.checkmark{width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 7px;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin-left: 0;
+    box-shadow: inset 0 0 0 #7ac142;
+    animation: fill .4s ease-in-out .4s forwards,scale .3s ease-in-out .9s both;
+    position: absolute;
+    left: 60%;
+    top: 11px;}.checkmark__check{transform-origin:50% 50%;stroke-dasharray:48;stroke-dashoffset:48;animation:stroke .3s cubic-bezier(.65,0,.45,1) .8s forwards}@keyframes stroke{100%{stroke-dashoffset:0}}@keyframes scale{0%,100%{transform:none}50%{transform:scale3d(1.1,1.1,1)}}@keyframes fill{100%{box-shadow:inset 0 0 0 30px #7ac142}}
+		.grey-bg{background:#FAFAFA;border-right:1px solid #ccc;border-left:1px solid #ccc;}.topright ul{margin:0;padding:0;list-style:none;float:left;width:45%;border-right:1px solid #ccc;min-height:107px;}.topright ul li{font-size:13px;padding:2px 5px;}.topright ul:nth-child(even){border-right:0px;}.topright ul li span{font-weight:600;}.verifyEmp ul{padding:0;margin:0;list-style:none;}
+		.verifyEmp ul li{float:left;background:#4D4E4E;border:2px solid #A8A8A8;border-radius:0px 12px 12px 0px;color:#fff;padding:10px;width:30%}.verifyEmp ul li.second{background:#878EA7;width:70%;border-radius:12px 0px 0px 12px}
+		ul.clear{padding:0;margin:0;list-style:none;margin:10px 0;}ul.clear li{padding:1px 5px;float:left;width:70%;font-size:13px;line-height:100%;margin:5px 0;}ul.clear li.green{background:#16A84A;color:#fff;text-transform:uppercase;width:30%;text-align:center;font-size:18px;padding:6px 5px;}
+		ul.alert{padding:0;margin:0;list-style:none;margin:10px 0;}ul.alert li{padding:1px 5px;float:left;width:70%;font-size:13px;line-height:100%;margin:5px 0;}ul.alert li.orange{background:#FAA41A;color:#fff;text-transform:uppercase;width:30%;text-align:center;font-size:18px;padding:6px 5px;}
+		ul.negative{padding:0;margin:0;list-style:none;margin:10px 0;}ul.negative li{padding:1px 5px;float:left;width:70%;font-size:13px;line-height:100%;margin:5px 0;}ul.negative li.red{background:#EF4438;color:#fff;text-transform:uppercase;width:30%;text-align:center;font-size:18px;padding:6px 5px;}
+		.primaryAnalysis{border-top:1px solid #ccc;padding:20px 10px;margin:25px 0 0;}
+		.primaryAnalysis table tr td{font-size:14px;}
+		.greyTxt{color:#ccc;font-size:12px;font-weight:normal;}
+		.green{color:#16A84A;font-weight:bold;}
+		.checkPos{position: absolute;
+    background: #fff;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    top: -15px;color:#16A84A;right:2%;}
+	.primaryAnalysis table tr th{padding: 8px 10px;font-size:14px;}</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="/static/logo.jpg" class="img-responsive">
+				</div>
+				<div class="col-md-8 grey-bg topright">
+					
+								<ul>
+									<li>Client Name: <span></span></li>
+									<li>Phone Number : <span></span></li>
+									<li>Report Date: <span></span></li>
+								</ul>
+							
+								<ul>
+									<li>Applicant Name: <span></span></li><li>
+									Applicant Mobile Number : <span></span></li><li>
+									Applicant Address: <span></span></li>
+								</ul>
+							
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section>
+	
+		<article>
+			<div class="container annexture">
+				<div class="topAnnex">BACKGROUND SCREENING REPORT</div>
+				<div class="row">
+				<div class="col-md-12">
+					<div class="verifyEmp">
+						<ul>
+							<li>VERIFY EMPLOYEE</li>
+							<li class="second">YOUR IDENTITY RECORD, CRIMINAL RECORD & EMPLOYMENT RECORD</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="row">
+					<div class="col-md-4">
+						<ul class="clear">
+							<li class="green">CLEAR</li>
+							<li class="">Details provided by the candidate are accurate </li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-4">
+						<ul class="alert">
+							<li class="orange"><strong>ALERT</strong></li>
+							<li>Details provided by the candidate are accurate </li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="negative">
+							<li class="red"><strong>NEGATIVE</strong></li>
+							<li>Details provided by the candidate are accurate </li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4 primaryAnalysis">
+						<div class="topAnnex">PRIMARY ANALYSIS</div>
+						<table width="100%" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td class="text-center">ID CHECK : <br>
+								
+									<span class="red">NEGATIVE</span>
+								
+							</td>
+							
+						</tr>
+						<tr>
+							<td class="text-center">EMPLOYMENT CHECK<br>
+								
+									<span class="red">NEGATIVE</span>
+								
+							</td>
+							
+						</tr>
+						<tr>
+							<td class="text-center">CRIMINAL CHECK<br>
+								
+									<span class="red">NEGATIVE</span>
+								
+							</td>
+							
+						</tr>
+						<tr>
+							<td class="text-center">FINAL RESULT<br>
+								
+									<span class="red">NEGATIVE</span>
+								
+							</td>
+							
+						</tr>
+						
+					</tbody>
+				</table>
+					</div>
+					<div class="col-md-8 primaryAnalysis">
+						<div class="topAnnex">IDENTITY CHECK :  </div>
+						
+							<div class="checkPos">NEGATIVE</div>
+						
+						
+						<table width="100%" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td>Aadhaar number</td>
+							<td class="borRight"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></td>
+							<td>DOB</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Name</td>
+							<td class="borRight"></td>
+							<td>Age </td>
+							<td>40-50<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></td>
+						</tr>
+						<tr>
+							<td>Father Name</td>
+							<td class="borRight"></td>
+							<td>Gender</td>
+							<td>Male<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></td>
+						</tr>
+						<tr>
+							<td>State</td>
+							<td class="borRight">Haryana<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></td>
+							<td>Mobile No</td>
+							<td><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></td>
+						</tr>
+						<tr>
+							<td>Address</td>
+							<td colspan="3"></td>
+							
+						</tr>
+						<tr>
+							<td>Pin Code</td>
+							<td colspan="3">201301</td>
+							
+						</tr>
+						<tr>
+							<td colspan="4" class="greyTxt">REMARKS*. The above mentioned details have been verified on 7th April 2020. MODE OF VERIFICATION : Online Verification</td>
+						</tr>
+					</tbody>
+				</table>
+					</div>
+					
+				<div class="clearfix"></div>
+				
+				<div class="col-md-12 primaryAnalysis">
+						<div class="topAnnex">EMPLOYER DETAILS</div>
+						
+							<div class="checkPos">NEGATIVE</div>
+						
+						<table width="100%" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<th>Organisation Name </th>
+							<th>Date of Joining </th>
+							<th>Date of Leaving </th>
+							<th>Address</th>
+						</tr>
+						
+						<tr>
+							<td colspan="4" class="greyTxt">REMARKS*. The above mentioned details have been verified on 7th April 2020. The records have been published basis the employers who are mapped to the provided UAN number. MODE OF VERIFICATION : Online Verification</td>
+						</tr>
+					</tbody>
+				</table>
+					</div>
+				<div class="clearfix"></div>
+				
+				<div class="col-md-12 primaryAnalysis">
+						<div class="topAnnex">CRIMINAL CHECK DETAILS</div>
+						
+							<div class="checkPos">NEGATIVE</div>
+						
+						<table width="100%" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td>(a) Name of the applicant</td>
+							<td></td>
+						
+						</tr>
+						<tr>
+							<td>(b) Father Name </td>
+							<td></td>
+							
+						</tr>
+						<tr>
+							<td>(d) Address </td>
+							<td></td>
+							
+						</tr>
+						
+						<tr>
+							<td colspan="2" class="greyTxt">
+							 1. The information found is reported as is on the date of generating this report.<br>
+							 2. Details given here do not constitute as legal counsel or opinion.<br>
+							 3. We have collected the information from publicly available records and data. We try to the maximum possible extent to reduce errors. However, HelloVerify cannot guarantee that the information given is 100% accurate.<br>
+							 4. The information collected is limited to sources available to us and may not be completely up-to-date as they are not under the control of HelloVerify.<br>
+							 5. Since all the sources of information are not updated or available in an online medium, absence of matches do not mean that there is no ongoing court case for the individual. Names are matched both fully and partially and hence might include cases pertaining to a person involved with similar name or details.<br>
+							 6. Court checks are also limited by address information and might lead to mismatches or missing information when the address provided is not the same as the one that appears in court records.<br>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+					</div>
+				<div class="clearfix"></div>
+				</div>
+			</div>
+		</article>
+		
+<!--
+	<footer>
+		<p>Copyright 2009 Your name</p>
+	</footer>-->
+
+</body>
+
+</html>

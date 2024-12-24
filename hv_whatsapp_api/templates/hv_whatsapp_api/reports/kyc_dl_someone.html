@@ -1,0 +1,613 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://711de4f227ba.ngrok.io/report/report/123 -->
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Report</title>
+   <style type="text/css"></style>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+   <div
+      style="border-top:10px solid #000;border-bottom:1px solid #ccc;width:1120px;margin:0px auto 30px;padding:0; margin-bottom:40px;">
+      <div class="container">
+         <div class="row">
+            <div style="float:left;width:30%;border-right:0px solid #ccc;padding:0; margin-top:1px;"> <img
+                  src="{% static "img/logo.png" %}" class="img-responsive"></div>
+            <div style="float:right;width:69%;padding:0px 0;border-left:1px solid #ccc;background:#f8f8f8;">
+               <ul style="padding:0;margin:0;list-style:none;float:left;width:45%;padding:10px 0;">
+                  <li
+                     style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Client Name: <spa
+                        style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">
+                        {{jsn.header.client_name}}</span>
+                  </li>
+                  <li
+                     style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Mobile Number : <spa
+                        style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">
+                        {{jsn.header.client_mob}}</span>
+                  </li>
+                  <li
+                     style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Report Date: <spa
+                        style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">
+                        {{jsn.header.report_date}}</span>
+                  </li>
+               </ul>
+               <ul
+                  style="padding:0;margin:0;list-style:none;float:left;width:45%;border-left:1px solid #ccc;padding:10px 0;">
+                  <li
+                     style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Applicant Name: <spa
+                        style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">
+                        {{jsn.header.applicant_name}}</span>
+                  </li>
+                  <li
+                     style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Applicant Mobile Number : <spa
+                        style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-decoration: none">
+                        {{jsn.header.applicant_phone}}</span>
+                  </li>
+                  <li
+                     style="padding:3px 5px;font-size:16px;font-family: 'Roboto', sans-serif;color:rgb(108,108,108);font-weight:normal;font-style:normal;text-decoration: none">
+                     Applicant Address: <spa
+                        style="Times New Roman, Times, serif;font-size:16px;color:rgb(15,15,15);font-weight:bold;font-style:normal;text-align:justify;text-justify: inter-word;">
+                        {{jsn.header.appicant_address}}</span>
+                  </li>
+               </ul>
+            </div>
+            <div style="clear:both;"></div>
+         </div>
+      </div>
+   </div>
+   <section>
+      <article>
+         <div class="container annexture"
+            style="border-top:2px solid #ccc;position:relative;margin:50px auto;padding:40px 0;width:1120px;margin:0 auto;">
+            <div class="topAnnex"
+               style="position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:28px;font-weight:700;top:-21px;left:15px;">
+               BACKGROUND SCREENING REPORT</div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="verifyEmp">
+                     <ul style="margin:0;padding:0 0px;list-style:none;">
+                        <li
+                           style="float: left; background: #4D4E4E; border: 2px solid #A8A8A8; border-right:0px; border-radius: 12px 0px 0px 12px; color: #fff; padding: 10px; width: 30%;font-weight:bold;text-align:center;">
+                           <b>{{jsn.final.verify}}</b>
+                        </li>
+                        <li class="second"
+                           style="background: #fff; width: 67%; border-radius: 0px 12px 12px 0px; float: right; padding: 2px 2px; border: 2px solid #A8A8A8;border-left:0px;color:#fff;font-weight:bold;text-align:center;position:relative;left:-6px;">
+                           <div style="background:#878EA7;width:100%;line-height:35px;border-radius:0 10px 10px 0">
+                              <b>{{jsn.final.package_name}}</b>
+                           </div>
+                        </li><b>
+                        </b>
+                     </ul><b>
+                     </b>
+                  </div><b>
+                  </b>
+               </div><b>
+                  <div style="clear:both;"></div>
+               </b>
+            </div><b>
+               <div class="clearfix"></div>
+               <div class="row">
+                  <div class="col-md-4" style="width:34.4%;float:left;">
+                     <ul class="clear" style="list-style:none;padding:10px 0 10px 0px;margin:0;">
+                        <li class="green"
+                           style="background: #0EA900; color: #fff; text-transform: uppercase; width: 26%; text-align: center; font-size: 18px; padding: 20px 0px;float:left;font-weight:normal;border-radius: 12px 0 0 12px;border: 1px solid #A8A8A8;">
+                           CLEAR</li>
+                        <li
+                           style="padding: 16px 5px;float: left;width: 70%;font-size: 15px; color:grey;line-height: 100%;margin: 0px 0;border: 1px solid #A8A8A8;border-left: 0px; font-weight:normal">
+                           Details provided by the candidate are accurate</li>
+                     </ul>
+                     <div class="clearfix"></div>
+                  </div>
+                  <div class="col-md-4" style="width:33%;float:left;margin-left:-3px;">
+                     <ul class="clear" style="list-style:none;padding:10px 0 10px 0;margin:0;">
+                        <li class="green"
+                           style="background: #FAA41A; color: #fff; text-transform: uppercase; width: 26%; text-align: center; font-size: 18px; padding: 21px 0px;float:left;font-weight:normal;border-radius: 0;">
+                           ALERT</li>
+                        <li
+                           style="padding: 16px 5px;float: left;width: 70%;font-size: 15px; color:grey;line-height: 100%;margin: 0px 0;border: 1px solid #A8A8A8;border-left: 0px; font-weight:normal">
+                           Details provided by the candidate require attention</li>
+                     </ul>
+                     <div class="clearfix"></div>
+                  </div>
+                  <div class="col-md-4" style="width:33%;float:left;margin-left:-5px;">
+                     <ul class="clear" style="list-style:none;padding:10px 0 10px 0;margin:0;">
+                        <li class="green"
+                           style="background: #EF4438; color: #fff; text-transform: uppercase; width: 26%; text-align: center; font-size: 18px; padding: 21px 0px;float:left;font-weight:normal;border-radius: 0;">
+                           NEGATIVE</li>
+                        <li
+                           style="padding: 16px 6px;float: left;width: 70%;font-size: 15px; color:grey; line-height: 100%;margin: 0px 0;border: 1px solid #A8A8A8;border-left: 0px;border-radius:0 10px 10px 0; font-weight:normal;">
+                           Details provided by the candidate do not match</li>
+                     </ul>
+                     <div class="clearfix"></div>
+                  </div>
+                  <div style="clear:both;"></div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4 primaryAnalysis"
+                     style="border-top: 2px solid #ccc; padding: 20px 0; margin: 40px 0 0 6px; width: 31%; float: left; position:relative;right:10px;">
+                     <div class="topAnnex"
+                        style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 24px; font-weight: 700; top: -22px; left:15%">
+                        PRIMARY ANALYSIS
+                     </div>
+                     <table width="100%" cellpadding="0" cellspacing="0"
+                        style="border: 3px solid #ccc; margin-bottom: 25px;border-top:4px solid #fd6455;">
+                        <tbody>
+                           <tr style="background:#f8f8f8;">
+                              <td class="text-center"
+                                 style="padding: 2.3px 10px; font-size: 20px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:75px;">
+                                 ID CHECK : {{jsn.final.id_type}}<br>
+                                 {% if jsn.final.id_result == "Green" %}
+                                 <span class="red" style="color: #16A84A;
+                                 font-weight: bold;">CLEAR</span>
+                                 {% else %}
+                                 <span class="red" style="color:#f00;
+                                 font-weight: bold;">NEGATIVE</span>
+                                 {%endif%}
+                              </td>
+                           </tr>
+                           <tr style="background:#f8f8f8;">
+                              <td class="text-center"
+                                 style="padding: 2.3px 10px; font-size: 20px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:74px;">
+                                 LOCATION CHECK<br>
+                                 {% if jsn.final.crime_result == "Green" %}
+                                 <span class="green" style="color: #16A84A;
+                                 font-weight: bold;">Matched</span>
+                                 {% else %}
+                                 <span class="red" style="color:#f00;
+                                 font-weight: bold;">Not Matched</span>
+                                 {%endif%}
+                              </td>
+                           </tr>
+                           <tr style="background:#f8f8f8;">
+                              <td class="text-center"
+                                 style="padding: 2.3px 10px; font-size: 20px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:74px;">
+                                 ARTEFACTS <br> SELFIE, PHOTOGRAPHS
+                              </td>
+                           </tr>
+                           <tr style="background:#ffefee">
+                              <td class="text-center"
+                                 style="padding: 2.3px 10px; font-size: 20px; font-weight: bold; position: relative; border-bottom: 1px solid #ccc; text-align: center;color:#4F4D4D; height:76px;">
+                                 FINAL RESULT<br>
+                                 {% if jsn.final.final_result == "" %}
+                                 <span class="red" style="color:#16A84A;
+                                 font-weight: bold;">CLEAR</span>
+                                 {% else %}
+                                 <span class="red" style="color:#f00;
+                                 font-weight: bold;">NEGATIVE</span>
+                                 {%endif%}
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="col-md-8 primaryAnalysis"
+                     style="border-top: 2px solid #ccc; padding: 20px 0px; margin: 40px 0 0;width:68%;float:left;position:relative;">
+                     <div class="topAnnex"
+                        style="position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 24px; font-weight: 700; top: -22px; left:4%">
+                        IDENTITY CHECK : {{jsn.final.id_type}}</div>
+                     {% if jsn.final.id_result == "Green" %}
+                     <div class="checkPos"
+                        style=" position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 16px; font-weight: 700; top: -15px; color: #16A84A; right: 2%;">
+                        CLEAR</div>
+                     {% else %}
+                     <div class="checkPos red"
+                        style=" position: absolute; background: #fff; padding: 5px 15px; text-transform: uppercase; font-size: 16px; font-weight: 700; top: -15px; color: #16A84A; right: 2%;color:#f00">
+                        NEGATIVE</div>
+                     {%endif%}
+                     <table width="100%" cellpadding="0" cellspacing="0"
+                        style="border: 3px solid #ccc; margin-bottom: 25px;border-top:4px solid #fd6455;">
+                        <tbody>
+                           <tr style="background:#f8f8f8;">
+                              {% if jsn.dl.image == "img" %}
+                              <td rowspan="4"
+                                 style="background:#f8f8f8;text-align:center;border-right:1px solid #A6A6A6;"
+                                 class="text-center"><br><img src="https://checkapi.helloverify.com/static/img/img.jpg"
+                                    style="border:1px solid black; width:140px; height:180px;margin-bottom: 22px;"></td>
+                              {% else %}
+                              <td rowspan="4"
+                                 style="background:#f8f8f8;text-align:center;border-right:1px solid #A6A6A6;"
+                                 class="text-center"><br><img src="{% static "img/noimg.png" %}"
+                                    style="border:0px solid black; width:140px; height:180px;margin-bottom: 22px;"></td>
+                              {% endif %}
+                              <td style="padding: 20px 10px; font-size: 16px; font-weight: bold; position: relative;">DL
+                                 Number : </td>
+                              <td style="padding: 16px 10px; font-size: 16px; font-weight: bold; position: relative;"
+                                 class="borRight">{{jsn.dl.dl_number}}</td>
+                           </tr>
+                           <tr>
+                              <td style="padding: 20px 10px; font-size: 16px; font-weight: bold; position: relative;">
+                                 Name : </td>
+                              <td style="padding: 20px 10px; font-size: 16px; font-weight: bold; position: relative;"
+                                 class="borRight">{{jsn.dl.applicant_name}}</td>
+                           </tr>
+                           <tr style="background:#f8f8f8;">
+                              <td style="padding: 20px 10px; font-size: 16px; font-weight: bold; position: relative;">
+                                 DOB : </td>
+                              <td style="padding: 20px 10px; font-size: 16px; font-weight: bold; position: relative;"
+                                 class="borRight">{{jsn.dl.dob}}</td>
+                           </tr>
+                           <tr>
+                              <td
+                                 style="padding: 20px 10px; font-size: 16px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;">
+                                 Father's Name : </td>
+                              <td style="padding: 20px 10px; font-size: 16px; font-weight: bold; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;"
+                                 class="borRight">{{jsn.dl.father_name}}</td>
+                           </tr>
+                           <tr style="background:#f8f8f8;">
+                              <td style="padding: 12px 10px; font-size: 15px; font-weight: normal; position: relative;border-bottom:1px solid #ccc;border-bottom:1px solid #ccc;color:#828282;background:#fff;height:57px"
+                                 colspan="4" class="greyTxt"><br><b>REMARKS*.</b> The above mentioned details have bee
+                                 verified on {{jsn.dl.remark}}. <br><b>MODE OF VERIFICATION :</b> Online</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div><br><br>
+                  <div style="clear:both"></div>
+                  <div class="row">
+                     <div class="container annexture"
+                        style="border:2px solid #ccc;position:relative;padding:40px 0px;width:1120px;margin:0 auto;">
+                        <div class="topAnnex"
+                           style="position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:24px;font-weight:700;top:-26px;left:10px;">
+                           DRIVING LICENCE ANNEXURE</div>
+                        <div style="width:100%;float:left">
+                           <table width="96%" cellpadding="0" cellspacing="0"
+                              style="border:3px solid #e9e9e9;margin-bottom:25px;margin:0 auto;border-top:4px solid #fd6455;">
+                              <tbody style="width:100%;border-top:4px solid #fd6455">
+                                 <tr style="border-bottom:1px solid #ccc;background:#f8f8f8;">
+                                    <td colspan="3"
+                                       style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                                       Entered Details </td>
+                                 </tr>
+                                 <tr style="border-bottom:1px solid #e9e9e9;">
+                                    <td
+                                       style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                                       Name</td>
+                                    <td class="borRight"
+                                       style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                                       DOB</td>
+                                    <td
+                                       style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                                       DRIVING LICENCE NO.</td>
+                                 </tr>
+                                 <tr style="border-bottom:1px solid #e9e9e9;background:#f8f8f8;">
+                                    <td
+                                       style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                                       {{jsn.dl.applicant_name}}</td>
+                                    <td class="borRight"
+                                       style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                                       {{jsn.dl.dob}}</td>
+                                    <td
+                                       style="border-bottom:1px solid #e9e9e9;padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;">
+                                       {{jsn.dl.dl_number}}</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <table width="96.5%" cellpadding="0" cellspacing="0"
+                           style="border:3px solid #e9e9e9; border-top:4px solid #fd6455;margin:0 auto; margin-top:120px;table-layout:fixed;">
+                           <tbody style="width:100%;border-top:4px solid #A6A6A6">
+                              <tr style="border-bottom:1px solid #e9e9e9;">
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                                    Driving Licence Status</td>
+                                 {% if jsn.final.id_result == "Green" %}
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;color: #16A84A;">
+                                    <strong>CLEAR</strong>
+                                    <img src="{% static "img/open.png" %}" style="verticle-align:top;">
+                                 </td>
+                                 {%else%}
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;color:#f00;">
+                                    <strong>NEGATIVE</strong>
+                                    <img src="{% static "img/close.png" %}" style="verticle-align:top;">
+                                 </td>
+                                 {%endif%}
+                              </tr>
+                              <tr style="border-bottom:1px solid #e9e9e9;background:#f8f8f8;">
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                                    Name</td>
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                                    {{jsn.dl.applicant_name}}</td>
+                              </tr>
+                              <tr style="border-bottom:1px solid #e9e9e9;">
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                                    Father/Husband Name</td>
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #e9e9e9;">
+                                    {{jsn.dl.father_name}}</td>
+                              </tr>
+                              <tr style="border-bottom:1px solid #e9e9e9;background:#f8f8f8;">
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                                    Date of Issue</td>
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                                    {{jsn.dl.issue_date}}</td>
+                              </tr>
+                              <tr style="border-bottom:1px solid #e9e9e9;">
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                                    DOB</td>
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                                    {{jsn.dl.dob}}</td>
+                              </tr>
+                              <tr style="border-bottom:1px solid #e9e9e9;background:#f8f8f8;">
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                                    Address</td>
+                                 <td
+                                    style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                                    {{jsn.dl.applicant_address}}</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+         </div><br><br>
+         <div class="container annexture"
+            style="page-break-before: always;position:relative;margin:50px auto;padding:0px 0;width:1120px;margin:0 auto;">
+         </div><br><br>
+         <div style="clear:both"></div>
+         <div class="row">
+            <div class="container annexture"
+               style="border:2px solid #ccc;position:relative;padding:40px 0px;width:1120px;margin:0 auto;margin-top:60px;">
+               <div class="topAnnex"
+                  style="position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:24px;font-weight:700;top:-26px;left:10px;">
+                  LOCATION CHECK ANNEXURE</div>
+               <table width="96.5%" cellpadding="0" cellspacing="0"
+                  style="border:3px solid #e9e9e9; border-top:4px solid #fd6455;margin:0 auto; table-layout:fixed;">
+                  <tbody style="width:100%;border-top:4px solid #A6A6A6">
+                     <tr style="border-bottom:1px solid #e9e9e9;">
+                        <td
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           Location Check Status</td>
+                        {% if jsn.kyc.location_match == "true" %}
+                        <td colspan="2"
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;color:#f00;">
+                           Matched</td>
+                        {%else%}
+                        <td colspan="2"
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;color:#f00;">
+                           Not Matched</td>
+                        {%endif%}
+                     </tr>
+                     <tr style="border-bottom:1px solid #e9e9e9;background:#f8f8f8;">
+                        <td
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           Claimed Address</td>
+                        <td colspan="2"
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           {{jsn.kyc.claimed_address}}</td>
+                     </tr>
+                     <tr style="border-bottom:1px solid #e9e9e9;">
+                        <td
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           Distance between claimed address and location detected</td>
+                        <td colspan="2"
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           {{jsn.kyc.distance}} Meters</td>
+                     </tr>
+                     <tr style="border-bottom:1px solid #e9e9e9;background:#f8f8f8;">
+                        <td
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           Ownership Status</td>
+                        <td colspan="2"
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           {{jsn.kyc.ownership_status}}</td>
+                     </tr>
+                     <tr style="border-bottom:1px solid #e9e9e9;">
+                        <td
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;">
+                           Period of Stay</td>
+                        <td
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #e9e9e9;">
+                           FROM: {{jsn.kyc.stay_from}}</td>
+                        <td
+                           style="padding:8px 10px;font-size:16px;font-weight:bold;position:relative;border-right:1px solid #ccc;border-bottom:1px solid #e9e9e9;">
+                           TO: {{jsn.kyc.stay_to}}</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <div
+                  style="font-size: 15px; font-weight: normal;color:#828282;background:#fff; margin-left: 25px; margin-top: 25px;"
+                  class="greyTxt"><b>REMARKS*.</b> We accept current location up to 300m from the claimed address</div>
+            </div>
+         </div>
+         <table style=" display: flex;
+         justify-content: center;">
+            <tbody>
+               <tr>
+                  <td>
+                     <div class="row">
+                        <div class="container annexture"
+                           style="border:2px solid #ccc;position:relative;padding:20px 0px;width:1120px;margin:0 auto;margin-top:60px;">
+                           <div class="topAnnex"
+                              style="position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:24px;font-weight:700;top:-26px;left:10px;">
+                              ARTEFACTS
+                           </div>
+                           <table width="96.5%" cellpadding="0" cellspacing="0"
+                              style="margin:0 auto; table-layout:fixed;">
+                              <tbody style="width:100%;border-top:4px solid #A6A6A6">
+                                 <tr style="border-bottom: 3px solid black;">
+                                    <td style="text-align:center">
+                                       <h3>Selfie of applicant</h3>
+                                    </td>
+                                    <td style="text-align:center">
+                                       <h3>Picture of Entrance of the home</h3>
+                                    </td>
+                                    <td style="text-align:center">
+                                       <h3>Picture of vehicle owned</h3>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="width:140px;height:300px;padding:8px 12px 12px 12px;">
+                                       <img src={{jsn.kyc.selfie_url}} style="width: 100%;height: 100%;">
+                                    </td>
+                                    <td style="width:140px;height:300px;padding:8px 12px 12px 12px;">
+                                       <img src={{jsn.kyc.gate_url}} style="width: 100%;height: 100%;">
+                                    </td>
+                                    <td style="width:140px;height:300px;padding:8px 12px 12px 12px;">
+                                       <img src={{jsn.kyc.vehicle_or_sign_url}} style="width: 100%;height: 100%;">
+                                    </td>
+                                 </tr>
+                              <tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <div class="row">
+                        <div class="container annexture"
+                           style="border:2px solid #ccc;position:relative;padding:20px 0px;width:1120px;margin:0 auto;margin-top:60px;">
+                           <div class="topAnnex"
+                              style="position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:24px;font-weight:700;top:-26px;left:10px;">
+                              Address and Location Proof
+                           </div>
+                           <table width="96.5%" cellpadding="0" cellspacing="0"
+                              style="margin:0 auto; table-layout:fixed;">
+                              <tbody style="width:100%;border-top:4px solid #A6A6A6">
+                                 <tr style="border-bottom: 3px solid black;">
+                                    <td style="text-align:center">
+                                       <h3>Front of Document</h3>
+                                    </td>
+                                    <td style="text-align:center">
+                                       <h3>Back of Document</h3>
+                                    </td>
+                                    <td style="text-align:center">
+                                       <h3>Location</h3>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="width:140px;height:300px;padding:8px 12px 12px 12px;">
+                                       <img src={{jsn.kyc.front_img_url}} style="width: 100%;height: 100%;">
+                                    </td>
+                                    <td style="width:140px;height:300px;padding:8px 12px 12px 12px;">
+                                       <img src={{jsn.kyc.back_img_url}} style="width: 100%;height: 100%;">
+                                    </td>
+                                    <td style="width:140px;height:300px;padding:8px 12px 12px 12px;">
+                                       <img src={{jsn.kyc.location_img_url}} style="width: 100%;height: 100%;">
+                                    </td>
+                                 </tr>
+                                 <tr><td></td><td></td><td>&nbsp;&nbsp;A- Location Claimed, B- Location Detected</td></tr>
+                              <tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </td>
+               </tr> `
+            </tbody>
+         </table>
+         <div style="width:1120px;margin:0px auto 30px;padding:0 10px;page-break-before: always;">
+            <div class="container">
+               <div class="row">
+                  <div style="float:left;width:30%;border-right:0px solid #ccc;padding:20px 0;"> <img src="{% static "img/logo.png" %}" class="img-responsive"></div>
+                  <div style="clear:both;"></div>
+               </div>
+            </div>
+         </div>
+         <div class="container annexture"
+            style="border:1px solid #ccc;position:relative;padding:40px 10px;width:1120px;margin:0 auto" "="">
+         <div class=" topAnnex"
+            style="left:10px;position:absolute;background:#fff;padding:5px 15px;text-transform:uppercase;font-size:24px;font-weight:700;top:-26px">
+            RESTRICTIONS &amp; LIMITATIONS</div>
+         <table width="100%" cellpadding="0" cellspacing="0" style="border: 1px solid #ccc;margin-bottom: 25px">
+            <tbody>
+               <tr>
+                  <td colspan="2" style="padding:6px;font-size:14px;line-height:120%;padding:25px;">
+                     <h2 style="text-align:cener;font-size:26px;text-align:center;">Legal Disclaimer</h2>
+                     <p
+                        style="font-size:15px;font-weight:bold;text-align:center;margin-right:100px;margin-left:90px;justify-content: center;text-align: justify;text-justify: inter-word;">
+                        All rights reserved. The report and its contents are the property of Hello Verify India
+                        Private
+                        Limited (Hello Verify) and may not be reproduced in any manner without the express writte
+                        permission of Hello Verify.</p>
+                     <p
+                        style="font-size:15px;font-weight:normal;text-align:center;margin-right:100px;margin-left:90px;text-align: justify;text-justify: inter-word;">
+                        The Reports and Information contained herein are confidential in nature and are meant only
+                        for
+                        the
+                        internal use of the Hello Verify client for the assessment of the background of their
+                        applicant.
+                        The information and report are subject to change subject to the change in factual
+                        information.
+                        Information and report including text, graphics, links or other items are provided on an 'as
+                        is',
+                        'as available' basis. Hello verify expressly disclaims liability for errors or omissions i
+                        this
+                        report, information and material for information are obtained from various sources as per
+                        industry
+                        practice. No warranty of any kind, implied, express or statutory, including but not limited
+                        to
+                        the
+                        warranties of non-infringement of third party rights, title, merchantability, fitness for a
+                        particular purpose and freedom from computer virus, is given in conjunction with the
+                        informatio
+                        and materials. </p>
+                     <p
+                        style="font-size:15px;font-weight:normal;text-align:center;margin-right:100px;margin-left:90px;text-align: justify;text-justify: inter-word;">
+                        Our findings are based on the information available to us and industry practice and hence
+                        cannot
+                        be
+                        considered to be conclusive. We request you recognize that we are not the source of the data
+                        gathered and our reports are based on the information available to us as and per industry
+                        practice;
+                        therefore we cannot guarantee the accuracy of information collected. Should additional
+                        informatio
+                        or documentation become available which impacts our conclusions reached in our reports, we
+                        reserve
+                        the right to amend our findings accordingly.</p>
+                     <p
+                        style="font-size:15px;font-weight:normal;text-align:center;margin-right:100px;margin-left:90px;text-align: justify;text-justify: inter-word;">
+                        These reports are not intended for publication or circulation. They should not be shared with
+                        any
+                        other person including the applicant nor be reproduced for any other purpose, in whole or i
+                        part,
+                        without our prior written consent in each specific instance from Hello Verify. Our reports
+                        cannot
+                        be relied upon by any other person and we expressly disclaim all responsibility or liability
+                        for
+                        any costs, damages, losses, liabilities, expenses incurred by anyone as a result of
+                        circulation,
+                        publication, reproduction or use of our reports contrary to the provisions of this paragraph.
+                     </p>
+                     <p
+                        style="font-size:15px;font-weight:normal;text-align:center;margin-right:100px;margin-left:90px;text-align: justify;text-justify: inter-word;">
+                        The Report and Information consists of statements of opinion and not statements of fact or
+                        recommendations. You should obtain any additional information necessary to make an informed
+                        decision prior to usage of the report. Hello Verify and the directors, officers, agents, and
+                        representatives, assume no (and hereby disclaims all) responsibility or liability that may
+                        arise
+                        directly or indirectly from usage of such reports. </p>
+                     <p
+                        style="font-size:15px;font-weight:normal;text-align:center;margin-right:100px;margin-left:90px;text-align: justify;text-justify: inter-word;">
+                        Due to the limitations mentioned above, the result of our work with respect to the background
+                        checks should be considered only as a guideline. Our reports and comments should not be
+                        considered
+                        a definitive pronouncement on the individual.</p>
+                     <br><br><br><br><br><br><br><br><br><br><br><br>
+                     <p style="font-size:15px;font-weight:bold;text-align:center;">Hello Verify Confidential</p>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </article>
+   </section>
+</body>
+
+</html>
